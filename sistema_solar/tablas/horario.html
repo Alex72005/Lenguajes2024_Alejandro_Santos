@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        table{
+            width: 100%;
+            height: 250px;
+            border-collapse: collapse;
+        }
+        table, td{
+            border: 1px solid black;
+        }
+        td{
+            min-width: 100px;
+            min-height: 100px;  
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="width: 1000px; margin: auto;">
+    <!--Horario clase-->
+    <center><h1>Horario</h1></center>
+    <table>
+        <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>15:00 - 16:00</td>
+            <td style="background-color: palevioletred;">Lenguajes</td>
+            <td style="background-color: palevioletred;">Sistemas</td>
+            <td style="background-color: midnightblue;">Empleabilidad</td>
+            <td rowspan="2" style="background-color: midnightblue;">Empleabilidad</td>
+            <td rowspan="2"style="background-color: palevioletred;">Lenguajes</td>
+        </tr>
+        <tr>
+            <td>16:00 - 17:00</td>
+            <td style="background-color: palevioletred;">Sistemas</td>
+            <td rowspan="3" style="background-color: darkgreen;">Bases de datos</td>
+            <td rowspan="3" style="background-color: yellow;">Programación</td>
+            
+            
+        </tr>
+        <tr>
+            <td>17:00 - 18:00</td>
+            <td rowspan="2" style="background-color: yellow;">Entornos</td>
+           
+
+            <td style="background-color: yellow;">Entornos</td>
+            <td style="background-color: palevioletred;">Sistemas</td>
+        </tr>
+        <tr>
+            <td>18:00 - 19:00</td>
+            
+
+
+            <td rowspan="3" style="background-color: darkgreen;">Bases de datos</td>
+            <td rowspan="3" style="background-color: yellow;">Programación</td>
+        </tr>
+        <tr>
+            <td>19:00 - 20:00</td>
+            <td style="background-color: darkcyan;">Sostenibilidad</td>
+            <td rowspan="2" style="background-color: yellow;">Programación</td>
+            <td rowspan="2" style="background-color: palevioletred;">Sistemas</td>
+            
+            
+        </tr>
+        <tr>
+            <td>20:00 - 21:00</td>
+            <td style="background-color: darkcyan;">Digitalización</td>
+            
+            
+            
+            
+        </tr>
+    </table>
+</body>
+</html>     
