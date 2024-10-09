@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contact-form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .contact-form h2 {
+            color: #a83faa;
+            text-align: center;
+        }
+        .contact-form p {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form input[type="url"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form textarea {
+            resize: none;
+            height: 100px;
+        }
+        .contact-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #a83faa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #922c92;
+        }
+        .required {
+            color: red;
+        }
+        .note {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <div class="contact-form">
+        <h2>Formulario de contacto</h2>
+        <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+
+        <form>
+            <label for="nombre">Nombre <span class="required">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+
+            <label for="website">Sitio web</label>
+            <input type="url" id="website" name="website" placeholder="Escribe la URL de tu web">
+
+            <label for="asunto">Asunto <span class="required">*</span></label>
+            <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+
+            <label for="mensaje">Mensaje <span class="required">*</span></label>
+            <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
+
+            <input type="submit" value="ENVIAR">
+        </form>
+
+        <p class="note">* Los campos son obligatorios.</p>
+    </div>
+    </table>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción al Sistema</title>
+    <style>
+         .estilo {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .estilo h1 {
+            color: blueviolet;
+            text-align: center;
+        }
+        .estilo p {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .estilo label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+        .estilo input[type="text"],
+        .estilo input[type="email"],
+        .estilo input[type="tel"],
+        .estilo input[type="url"],
+        .estilo textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .estilo textarea {
+            height: 100px;
+        }
+        .estilo input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .required {
+            color: red;
+        }
+        .note {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body style="width: 1000px; margin: auto;">
+    <table border="" cellspacing="10" align="center">
+        <div class="estilo"">
+            <h1>Formulario de contacto</h1>
+            <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+
+        <form>
+            <label for="nombre">Nombre <span class="required">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+
+            <label for="website">Sitio web</label>
+            <input type="url" id="website" name="website" placeholder="Escribe la URL de tu web">
+
+            <label for="asunto">Asunto <span class="required">*</span></label>
+            <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+
+            <label for="mensaje">Mensaje <span class="required">*</span></label>
+            <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
+
+            <input type="submit" value="ENVIAR">
+        </form>
+        <p class="note">* Los campos son obligatorios.</p>
+        </div> 
+    </table>
+</body>
+</html>
