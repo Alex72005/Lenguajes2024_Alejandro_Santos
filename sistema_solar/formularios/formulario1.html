@@ -16,6 +16,10 @@
             </td>
             <td style="vertical-align: middle;">
                 <h1>Formulario de Inscripción al Sistema</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
                 <p style="color: red; text-align: right;">
                     Todos los campos son obligatorios
                 </p>
@@ -40,9 +44,18 @@
         Contraseña: <input type="text"> (Procure utilizar combinaciones alfanúmericas) <br><br>
         Repita contraseña: <input type="text"> <br><br>
         Correo electrónico: <input type="text"> <br><br>
-        <p>
-                
-        </p>
+        <center>
+            <label style="text-align: center;">
+            <input type="checkbox" id="terms" name="terms" required> He leído y acepto los términos del sistema
+            </label>
+        </center>
+        <br>
+        <center>
+            <label for="button">
+            <input type="button" id="button" value="Enviar formulario" onclick="alert('Hiciste clic en el botón.')"><br><br>
+            </label>
+        </center>
+
     </form>
 </body>
-</html>
+</html> 
