@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Semántica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        header, nav, aside, main, footer, section, article, figure {
+            border: 1px solid #666;
+            padding: 10px;
+            background-color: #e3e3e3;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #90EE90;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #ADD8E6;
+        }
+
+        aside {
+            background-color: #B0E0E6;
+        }
+
+        main {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #F0F0F0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            background-color: #D3D3D3;
+        }
+
+        article {
+            background-color: #87CEEB;
+        }
+
+        figure {
+            background-color: #6CA6CD;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #8FBC8F;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+        }
+
+        .section-grid section, .section-grid aside, .section-grid figure {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabecera Principal</h1>
+    </header>
+
+    <nav>
+        <p>Navegación</p>
+    </nav>
+
+    <aside>
+        <p>Contenido relacionado</p>
+    </aside>
+
+    <main>
+        <section class="section-grid">
+            <section>
+                <header>Sección 1: Cabecera</header>
+                <article>Artículo 1</article>
+                <figure>Figura</figure>
+                <footer>Pie de artículo</footer>
+            </section>
+            <section>
+                <article>Artículo 2</article>
+                <article>Artículo 3</article>
+                <article>Artículo 4</article>
+            </section>
+        </section>
+
+        <section class="section-grid">
+            <section>
+                <header>Sección 2: Cabecera</header>
+                <article>Artículo 5</article>
+                <figure>Figura</figure>
+                <footer>Pie de artículo</footer>
+            </section>
+            <aside>
+                <p>Contenido adicional</p>
+            </aside>
+            <figure>Otra Figura</figure>
+        </section>
+
+        <aside>
+            <p>Otra barra lateral</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+</body>
+</html>
