@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, section, article, figure, footer, aside {
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 5px;
+}
+
+header, footer {
+    background-color: #A5D6A7;
+}
+
+nav {
+    background-color: #81C784;
+}
+
+aside {
+    background-color: #90CAF9;
+}
+
+article {
+    background-color: #64B5F6;
+}
+
+figure {
+    background-color: #4FC3F7;
+}
+
+footer {
+    background-color: #FFCDD2;
+}
+
+h1, h2, h3, h4, p, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
