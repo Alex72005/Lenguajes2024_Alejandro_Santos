@@ -1,59 +1,104 @@
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #111; /* Fondo oscuro */
+    color: #ddd; /* Texto claro */
 }
 
-header, nav, main, section, article, figure, footer, aside {
-    border: 1px solid #999;
-    padding: 10px;
-    margin: 5px;
-}
-
+/* Estilo del header y footer */
 header, footer {
-    background-color: #A5D6A7;
+    background: linear-gradient(to right, #000, #222); /* Degradado negro */
+    color:  #ddd; /* Texto dorado */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid  #f4c842; /* Línea dorada */
 }
 
-nav {
-    background-color: #81C784;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-aside {
-    background-color: #90CAF9;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ddd; /* Enlaces dorados */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Cambio a blanco en hover */
+}
+
+/* Secciones */
+section {
+    margin: 20px 0;
+    background-color: #222; /* Fondo negro suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+section header {
+    border-bottom: 2px solid #444; /* Borde gris oscuro */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #ddd; /* Títulos dorados */
 }
 
 article {
-    background-color: #64B5F6;
+    margin-bottom: 20px;
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 15px;
+    border-radius: 5px;
+    color: #ddd; /* Texto claro */
 }
 
-figure {
-    background-color: #4FC3F7;
+article h3 {
+    color:  #ddd; /* Títulos de artículo dorados */
 }
 
+article p {
+    color: #ccc; /* Texto un poco más claro */
+}
+
+/* Medios */
+iframe, video, audio {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #f4c842; /* Borde dorado en medios */
+    border-radius: 10px;
+}
+
+/* Estilo del logo */
+footer img {
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(244, 200, 66, 0.7); /* Sombra dorada alrededor del logo */
+}
+
+/* Estilos del footer */
 footer {
-    background-color: #FFCDD2;
+    border-top: 3px solid #f4c842; /* Línea dorada superior */
 }
 
-h1, h2, h3, h4, p, figcaption {
-    margin: 0;
-    padding: 0;
+footer p {
+    color:  #ddd; /* Texto blanco en el footer */
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Hover para botones y enlaces */
+button, a {
+    transition: color 0.3s ease-in-out;
 }
 
-ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-a:hover {
-    text-decoration: underline;
+button:hover, a:hover {
+    color: #fff; /* Cambio a blanco en hover */
 }
