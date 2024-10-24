@@ -1,8 +1,8 @@
 /* Estilo general */
 body {
-    font-family: 'Arial', sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Arial', sans-serif; /* Fuente del cuerpo de la página */
+    max-width: 1200px; /* Limita el ancho de la página */
+    margin: 0 auto; /* Centra la página en la pantalla */   
     background-color: #111; /* Fondo oscuro */
     color: #ddd; /* Texto claro */
 }
@@ -10,81 +10,82 @@ body {
 /* Estilo del header y footer */
 header, footer {
     background: linear-gradient(to right, #000, #222); /* Degradado negro */
-    color:  #ddd; /* Texto dorado */
-    text-align: center;
-    padding: 20px;
-    border-bottom: 4px solid  #f4c842; /* Línea dorada */
+    color:  #ddd; /* Texto gris claro */
+    text-align: center; /* Centra el contenido del header y el footer */
+    padding: 20px;  /* Añade espacio interior alrededor del contenido */
+    border-bottom: 4px solid  #f4c842; /* Línea dorada en la parte inferior*/
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Elimina los puntos de la lista por defecto */
+    padding: 0; 
     margin: 0;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Organiza los elementos en una fila horizontal */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Añade un margen de 15px entre cada elemento del menú */
 }
 
 nav ul li a {
-    color: #ddd; /* Enlaces dorados */
-    text-decoration: none;
-    font-weight: bold;
+    color: #ddd; /* Color claro (gris claro) para los enlaces */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
 }
 
+
 nav ul li a:hover {
-    color: #fff; /* Cambio a blanco en hover */
+    color: #fff; /* Cambia el color a blanco cuando el ratón pasa por encima */
 }
 
 /* Secciones */
 section {
-    margin: 20px 0;
+    margin: 20px 0; /* Añade un margen vertical de 20px */
     background-color: #222; /* Fondo negro suave */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    padding: 20px; /* Añade espacio interior en todos los lados */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil alrededor de la seccion */
 }
 
 section header {
-    border-bottom: 2px solid #444; /* Borde gris oscuro */
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    color: #ddd; /* Títulos dorados */
+    border-bottom: 2px solid #444; /* Línea gris oscuro debajo del título de la sección */
+    margin-bottom: 10px; /* Añade un margen debajo del header */
+    padding-bottom: 10px; /* Espacio adicional debajo del título */
+    color: #ddd; /* Color claro para el título de la sección */
 }
 
 article {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio debajo de cada artículo */
     background-color: #333; /* Fondo gris oscuro */
-    padding: 15px;
-    border-radius: 5px;
+    padding: 15px; /* Espacio interior para el contenido del artículo */    
+    border-radius: 5px; /* Bordes redondeados */
     color: #ddd; /* Texto claro */
-}
-
-article h3 {
-    color:  #ddd; /* Títulos de artículo dorados */
 }
 
 article p {
     color: #ccc; /* Texto un poco más claro */
+    text-align: justify; /* Justificación del texto */
 }
 
 /* Medios */
 iframe, video, audio {
-    display: block;
-    margin: 20px auto;
+    display: block; /* Cada elemento ocupa una fila completa */
+    margin: 20px auto; /* Centra los elementos con un margen superior e inferior de 20px */
     border: 2px solid #f4c842; /* Borde dorado en medios */
-    border-radius: 10px;
+    border-radius: 0px; /* Bordes cuadrados en los medios */
 }
 
-/* Estilo del logo */
+/* Estilo de las imagenes */
 footer img {
-    margin-top: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(244, 200, 66, 0.7); /* Sombra dorada alrededor del logo */
+    margin-top: 20px; /* Añade un margen superior a la imagen */
+    box-shadow: 0 0 15px rgba(244, 200, 66, 0.7); /* Sombra dorada alrededor de la imagen */
+    
 }
-
+.imagenes{
+    width: 981px;
+    height: 736px;
+}
 /* Estilos del footer */
 footer {
     border-top: 3px solid #f4c842; /* Línea dorada superior */
@@ -96,7 +97,7 @@ footer p {
 
 /* Hover para botones y enlaces */
 button, a {
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; 
 }
 
 button:hover, a:hover {
