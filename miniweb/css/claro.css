@@ -1,0 +1,34 @@
+body{
+    width: 1000px; /*Define el ancho para la pagina*/
+    margin: auto; /*Centra el contenido horizontalmente*/
+    background-color: #FFFF33; /*Color del fondo de la pagina un gris */
+}
+h1{
+    text-align: center;/*Pongo el texto centrado*/
+    font-size: 40px; /*Le aplico al texto un tamaño específico*/
+    background-color: red; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+}
+ul{
+    list-style-type: none; /* Elimina los puntos de la lista por defecto */
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+
+}
+li{
+    border-radius: 40px;
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

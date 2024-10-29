@@ -8,7 +8,7 @@ h1{
     color: white; /*Cambio el color del texto a blanco*/
     text-align: center;/*Pongo el texto centrado*/
     font-family: Arial, Helvetica, sans-serif; /*Le aplico al texto una fuente especifica*/
-    font-size: 40px; /*Le aplico al texto un tamaño específico*/
+    font-size: 40px; /*Le aplico al texto un tamaño específico*/    
     background-color: blue; /*El color del recuadro*/
     border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
     padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
