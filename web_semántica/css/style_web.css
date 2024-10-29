@@ -68,6 +68,12 @@ article p {
     text-align: justify; /* Justificación del texto */
 }
 
+article a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
 /* Medios */
 iframe, video, audio {
     display: block; /* Cada elemento ocupa una fila completa */
