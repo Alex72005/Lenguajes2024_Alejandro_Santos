@@ -12,24 +12,24 @@ h1{
 }
 ul{
     list-style-type: none; /* Elimina los puntos de la lista por defecto */
-    padding: 0px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 80px;
+    padding: 0px; /*EL espacio que agrego alrededor del texto en el cuadro*/
+    margin: 0 auto; /*Centro la lista alrededor del contenido*/
+    text-align: center; /*Pongo el texto centrado*/
+    margin-top: 80px; /*Pongo un margen encima de la lista para separarla del titulo*/
 
 }
 li{
-    border-radius: 40px;
-    background-color: red;
-    padding: 10px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
+    border-radius: 40px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    background-color: red; /*El color del recuadro*/
+    padding: 10px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    margin-bottom: 25px; /*Pongo un margen debajo de cada elemento para separarlos */
+    display: flex;  /* Organiza los elementos en una fila horizontal */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 50px; /*Pongo un margen debajo de cada elemento de la lista*/
+} 
 a{
     text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
-    color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black; /*Color de la letra*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Fuente de la letr4a*/
 }

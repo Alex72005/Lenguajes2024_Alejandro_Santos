@@ -69,9 +69,9 @@ article p {
 }
 
 article a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    color: white; /*Color de la letra*/
+    font-weight: bold; /*Letra en negrita*/
     
 }
 /* Medios */
@@ -103,7 +103,7 @@ footer p {
 
 /* Hover para botones y enlaces */
 button, a {
-    transition: color 0.3s ease-in-out; 
+    transition: color 0.3s ease-in-out;  /*es una transicion de color que cambia al colocar el raton encima del enlace*/
 }
 
 button:hover, a:hover {

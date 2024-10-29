@@ -25,8 +25,8 @@ li{
     background-color: blue; /*Color de cada recuadro de cada elemento de la lista*/
     border-radius: 15px; /*Borde del recuadro con  esquinas redondas*/
     padding: 1px; /*El espacio */
-    margin-bottom: 50px;
-    display: flex;
+    margin-bottom: 50px; /*Pongo un margen debajo de cada elemento para separarlos */
+    display: flex; /* Organiza los elementos en una fila horizontal */
     justify-content: center; /* Centra horizontalmente */
     align-items: center;     /* Centra verticalmente */
     
@@ -35,8 +35,8 @@ a{
     text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
     font-weight: bold; /* Hace el texto de los enlaces en negrita */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: white;
+    font-size: 15px; /*Tamaño de la letra*/
+    color: white; /*color de la letra*/ 
     
 }
 
