@@ -79,7 +79,7 @@ iframe, video, audio {
     display: block; /* Cada elemento ocupa una fila completa */
     margin: 20px auto; /* Centra los elementos con un margen superior e inferior de 20px */
     border: 2px solid #f4c842; /* Borde dorado en medios */
-    border-radius: 0px; /* Bordes cuadrados en los medios */
+    border-radius: 9px; /* Bordes cuadrados en los medios */
 }
 
 /* Estilo de las imagenes */
