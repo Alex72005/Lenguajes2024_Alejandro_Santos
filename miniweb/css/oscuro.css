@@ -1,4 +1,32 @@
 body{
     width: 1000px; /*Define el ancho para la pagina*/
     margin: auto; /*Centra el contenido horizontalmente*/
+    background-color: #121212; /*Color fondo de la pagina web*/
+}
+h1{
+    color: white;/*color de la letra*/
+    text-align: center;/*Pongo el texto centrado*/
+    background-color: #B3B3B3; /*El color del recuadro*/
+    border-radius:12px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del texto en el cuadro*/
+}
+ul{
+    list-style-type: none; /* Elimina los puntos de la lista por defecto */
+    padding: 0px; /*No agrego ningun espacio*/
+    margin: 0 auto; /*Centro la lista alrededor del contenido*/
+    text-align: center; /*Pongo el texto centrado*/
+    margin-top: 100px; /*Pongo un margen encima de la lista para separarla del titulo*/
+}
+li{
+    background-color: #B3B3B3; /*El color del recuadro*/
+    border-radius: 15px; /*Borde del recuadro con  esquinas redondas*/
+    padding: 1px; /*El espacio */
+    margin-bottom: 50px; /*Pongo un margen debajo de cada elemento para separarlos */
+    display: flex; /* Organiza los elementos en una fila horizontal */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+a{
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    color: white; /*Color de la letra*/
 }

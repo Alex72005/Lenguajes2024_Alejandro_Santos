@@ -1,7 +1,7 @@
 body{
     width: 1000px; /*Define el ancho para la pagina*/
     margin: auto; /*Centra el contenido horizontalmente*/
-    background-color: #FFFF33; /*Color del fondo de la pagina un gris */
+    background-color: white; /*Color del fondo de la pagina un gris */
 }
 h1{
     text-align: center;/*Pongo el texto centrado*/
