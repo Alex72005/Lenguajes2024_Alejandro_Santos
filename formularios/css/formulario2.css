@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: auto;
+}
+.tabla{
+    background-color: purple; 
+    padding: 20px;
+}
+.tabla2{
+    background-color: white;
+}
+.estilo {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 370px; 
+    width: 100%;
+}
+.estilo h1 {        
+    color: blueviolet;
+    text-align: center;
+}
+.estilo p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.estilo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+.estilo input[type="text"],
+.estilo input[type="email"],
+.estilo input[type="tel"],
+.estilo input[type="url"],
+.estilo textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.estilo textarea {
+    height: 100px;
+}
+.estilo input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.required {
+    color: red;
+}
+.note {
+    text-align: left;
+    font-size: 12px;
+    color: #999;
+}
+a{
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px; /*Tamaño de la letra*/
+    color: white; /*color de la letra*/ 
+    background-color: blue; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    margin-top: 20px; 
+
+}
