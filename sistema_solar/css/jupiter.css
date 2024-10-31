@@ -1,0 +1,72 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente para el texto */
+    background-color: #0A0A23; /* Fondo oscuro para simular el espacio */
+    color: #E5E5E5; /* Color claro para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin: auto; /* Centra el contenido de la página */
+    padding: 20px; /* Espaciado interno para todo el contenido */
+    max-width: 1000px; /* Ancho máximo de la página */
+}
+
+/* Estilos para el título principal */
+h1 {
+    color: #FFD700; /* Color dorado para el título */
+    text-align: center; /* Centra el título en la página */
+    font-size: 2.5em; /* Tamaño de fuente grande para h1 */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #FF851B; /* Color naranja para el enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado en enlaces */
+}
+
+/* Efecto hover para enlaces */
+a:hover {
+    color: #FFD700; /* Cambia a color dorado cuando el mouse pasa encima */
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+/* Estilo para párrafos */
+p {
+    font-size: 1.1em; /* Tamaño de fuente más grande para mejorar la legibilidad */
+    margin: 10px 0; /* Espaciado vertical entre párrafos */
+    text-align: justify; /* Justifica el texto para alineación uniforme */
+}
+
+/* Estilo para las imágenes */
+img {
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 20px auto; /* Margen vertical y centra la imagen */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Sombra sutil alrededor de la imagen */
+    height: "340px";/*Altura*/
+    width:"340px"; /*Anchura*/
+    
+    
+}
+
+/* Estilo para texto en negrita */
+b {
+    color: #7FDBFF; /* Azul claro para resaltar palabras en negrita */
+}
+
+/* Estilo para el botón de retorno */
+a {
+    display: inline-block; /* Hace que el enlace se comporte como un botón */
+    font-size: 1.3em; /* Aumenta el tamaño de la fuente en el botón */
+    color: #FFFFFF; /* Color del texto en blanco */
+    background-color: #111111; /* Fondo oscuro para el botón */
+    padding: 10px; /* Espaciado interno para hacer el botón más grande */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Sombra alrededor del botón */
+    margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+}
+
+/* Efecto hover para el botón de retorno */
+a:hover {
+    background-color: #7FDBFF; /* Cambia a fondo azul claro al pasar el mouse */
+    color: #111111; /* Cambia el color del texto a oscuro para contraste */
+}
