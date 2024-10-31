@@ -21,7 +21,7 @@ ul{
 li{
     border-radius: 40px; /*El borde del recuadro, que seria con las esquinas redondas*/
     background-color: red; /*El color del recuadro*/
-    padding: 10px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    padding: 20px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
     margin-bottom: 25px; /*Pongo un margen debajo de cada elemento para separarlos */
     display: flex;  /* Organiza los elementos en una fila horizontal */
     justify-content: center; /* Centra horizontalmente */

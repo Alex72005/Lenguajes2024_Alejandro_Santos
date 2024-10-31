@@ -20,7 +20,7 @@ ul{
 li{
     background-color: #B3B3B3; /*El color del recuadro*/
     border-radius: 15px; /*Borde del recuadro con  esquinas redondas*/
-    padding: 1px; /*El espacio */
+    padding: 2px; /*El espacio */
     margin-bottom: 50px; /*Pongo un margen debajo de cada elemento para separarlos */
     display: flex; /* Organiza los elementos en una fila horizontal */
     justify-content: center; /* Centra horizontalmente */

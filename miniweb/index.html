@@ -6,7 +6,12 @@
     <meta name="author" content="Alejandro Santos">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <link rel="stylesheet" href="css/oscuro.css">
+    <link rel="stylesheet" href="/miniweb/css/claro.css">
+
+    <!-- Archivo CSS para cambiar de tema la página de color -->
+    <link id="theme" rel="stylesheet" type="text/css" href="css/claro.css" />
+
+    <!-- CAMBIO DE COLOR -->
     <script>
         function cambiatema() {
             var theme = document.getElementById('theme'); // Corregido para seleccionar por ID
@@ -39,6 +44,7 @@
         <li><a href="Contenido/archivo_2.html"><h2>Archivo 2</h2></a></li>
         <li><a href="Contenido/archivo_3.html"><h2>Archivo 3</h2></a></li>
         <li><a href="../index.html"><h2>Volver a la página principal</h2></a></li>
-    </ul>  
+        <li><button class="tema"id="boton" onclick="cambiatema()">Modo claro/oscuro</button></li>
+    </ul> 
 </body>
 </html>   
