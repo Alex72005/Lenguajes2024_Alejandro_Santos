@@ -7,10 +7,30 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <link rel="stylesheet" href="css/oscuro.css">
-    
+    <script>
+        function cambiatema() {
+            var theme = document.getElementById('theme'); // Corregido para seleccionar por ID
+            if (theme.getAttribute('href') === 'css/claro.css') {
+                theme.setAttribute('href', 'css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', 'css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Asegúrate de seleccionar el elemento con ID "theme"
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', temaGuardado);
+            }
+        }
+    </script>
+
     <title>Pagina Principal Miniweb</title>
 </head>
-<body>
+<body onload="tema_activo()">
     <!--Archivo principal miniweb-->
     <h1>Miniweb</h1>
     <ul>
