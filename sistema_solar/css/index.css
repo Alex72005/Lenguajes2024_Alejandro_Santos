@@ -1,0 +1,111 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    background-color: #0A0A23; /* Fondo oscuro para simular el espacio */
+    color: #E5E5E5; /* Color claro para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin: auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno en los bordes de la página */
+    max-width: 1000px; /* Ancho máximo de la página */
+}
+
+/* Estilos para títulos de primer nivel */
+h1 {
+    color: #FFD700; /* Color dorado para destacar el título principal */
+    text-align: center; /* Centra el texto del título principal */
+    font-size: 2.5em; /* Tamaño de fuente grande para h1 */
+}
+
+/* Estilos para títulos de segundo nivel */
+h2 {
+    color: #7FDBFF; /* Azul claro para diferenciar los subtítulos */
+    font-size: 1.8em; /* Tamaño de fuente ligeramente más pequeño que h1 */
+    border-bottom: 2px solid #7FDBFF; /* Línea decorativa debajo del título */
+    padding-bottom: 5px; /* Espaciado inferior para separar del contenido */
+    margin-top: 25px; /* Margen superior para separar del contenido anterior */
+}
+
+/* Estilos para títulos de tercer nivel */
+h3 {
+    color: #FF851B; /* Color naranja para resaltar enlaces de planetas */
+    font-size: 1.5em; /* Tamaño de fuente más pequeño para h3 */
+}
+
+/* Estilo general para enlaces */
+a {
+    color: #FF851B; /* Color naranja para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de enlaces */
+}
+
+/* Estilo para el efecto hover en enlaces */
+a:hover {
+    color: #FFD700; /* Cambia a dorado al pasar el mouse por encima */
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+/* Estilo para párrafos */
+p {
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor para legibilidad */
+    margin: 10px 0; /* Espaciado vertical entre párrafos */
+    text-align: justify; /*Justifico el texto*/
+}
+
+/* Estilo para imágenes */
+img {
+    display: block; /* Centra las imágenes horizontalmente */
+    margin: 20px auto; /* Margen vertical y centra horizontalmente */
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Sombra alrededor de la imagen */
+    width: 510px; /*Anchura*/
+    height: 400px;/*Altura*/
+}
+
+/* Estilo para listas sin numeración */
+ul {
+    list-style-type: none; /* Elimina el estilo de viñetas predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+/* Estilo para cada elemento de la lista */
+ul li {
+    margin: 10px 0; /* Margen vertical entre elementos de la lista */
+}
+
+/* Estilo para enlaces dentro de la lista */
+ul li a {
+    font-size: 1.2em; /* Tamaño de fuente para destacar los enlaces */
+    color: #FF851B; /* Color naranja para enlaces de lista */
+}
+
+/* Efecto hover en enlaces de lista */
+ul li a:hover {
+    color: #FFD700; /* Cambia a dorado al pasar el mouse */
+}
+
+/* Estilo para texto en negrita */
+b {
+    color: #7FDBFF; /* Azul claro para resaltar palabras importantes en negrita */
+}
+
+/* Efecto de hover para títulos h2 y h3 */
+h2:hover, h3:hover {
+    color: #FFDC00; /* Cambia a dorado al pasar el mouse */
+    transition: color 0.3s ease; /* Suaviza la transición de color */
+}
+
+/* Estilos específicos para el botón de retorno */
+a h2 {
+    font-size: 1.3em; /* Tamaño de fuente para el botón de retorno */
+    color: #FFFFFF; /* Color de texto blanco */
+    background-color: #111111; /* Fondo oscuro para el botón */
+    padding: 10px; /* Espaciado interno para hacer el botón más grande */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Sombra alrededor del botón */
+}
+
+/* Efecto hover para el botón de retorno */
+a h2:hover {
+    background-color: #7FDBFF; /* Fondo azul claro al pasar el mouse */
+    color: #111111; /* Texto oscuro en hover para contraste */
+}

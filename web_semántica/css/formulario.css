@@ -1,52 +1,122 @@
+/* Estilo general para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Establece la fuente del texto del cuerpo */
+    background-color: #0A0A23; /* Color de fondo oscuro para simular el espacio */
+    color: #E5E5E5; /* Color del texto claro para buen contraste */
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    padding: 20px; /* Espacio interno alrededor del contenido */
 }
-.form-container {
-    width: 1000px;
-    margin: auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-header, footer {
-    text-align: center;
-    margin-bottom: 20px;
-}
-h2{
-    color: white; /*Cambio el color del texto a blanco*/
-    text-align: center;/*Pongo el texto centrado*/
-    font-family: Arial, Helvetica, sans-serif; /*Le aplico al texto una fuente especifica*/
-    font-size: 40px; /*Le aplico al texto un tamaño específico*/    
-    background-color: blue; /*El color del recuadro*/
-    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
-    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
 
+/* Estilo del contenedor principal */
+main {
+    max-width: 800px; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
+    background-color: #111; /* Color de fondo oscuro del formulario */
+    border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+    padding: 20px; /* Espaciado interno para que el contenido no esté pegado a los bordes */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave para darle profundidad */
 }
+
+/* Estilo para los encabezados */
+header h2 {
+    color: #FFD700; /* Color dorado para el título */
+    text-align: center; /* Centra el título en la página */
+}
+
+/* Estilo de las secciones del formulario */
 section {
-    margin-bottom: 20px;
+    margin-top: 20px; /* Espaciado superior para separar la sección del encabezado */
 }
-.espacio {
-    margin-bottom: 15px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-footer a{
-    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
-    font-weight: bold; /* Hace el texto de los enlaces en negrita */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px; /*Tamaño de la letra*/
-    color: white; /*color de la letra*/ 
-    background-color: blue; /*El color del recuadro*/
-    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
-    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
 
+/* Estilo de los campos del formulario */
+form div {
+    margin-bottom: 15px; /* Espaciado inferior entre los campos del formulario */
+}
+
+/* Estilo de etiquetas */
+label {
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espaciado inferior para separar la etiqueta del campo */
+}
+
+/* Estilo de los inputs (campos de entrada) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="week"],
+input[type="month"],
+input[type="color"],
+input[type="number"],
+input[type="search"],
+input[type="file"],
+input[type="url"],
+input[type="password"],
+input[type="range"] {
+    width: calc(100% - 20px); /* Ancho del campo completo menos 20px para el espaciado */
+    padding: 10px; /* Espaciado interno en los campos */
+    border: 1px solid #7FDBFF; /* Borde azul claro */
+    border-radius: 5px; /* Bordes redondeados para suavizar el diseño */
+    background-color: #222; /* Fondo del campo */
+    color: #E5E5E5; /* Color del texto dentro de los campos */
+    transition: border-color 0.3s; /* Transición suave para el color del borde al interactuar */
+}
+
+/* Efecto al enfocar los campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="color"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="file"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="range"]:focus {
+    border-color: #FFD700; /* Cambia el color del borde a dorado al enfocar */
+}
+
+/* Estilo para botones de restablecer y enviar */
+input[type="reset"],
+input[type="submit"] {
+    background-color: #7FDBFF; /* Fondo azul claro para los botones */
+    color: #111; /* Texto oscuro para contraste */
+    padding: 10px 15px; /* Espaciado interno en los botones */
+    border: none; /* Sin borde para un diseño más limpio */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave para el fondo al interactuar */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #FFD700; /* Cambia el fondo a dorado al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+footer {
+    margin-top: 20px; /* Espaciado superior para separar el pie de página del formulario */
+    text-align: center; /* Centra el texto en el pie de página */
+}
+
+/* Estilo para enlaces en el pie de página */
+footer a {
+    color: #7FDBFF; /* Color azul claro para el enlace */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+/* Efecto al pasar el mouse sobre el enlace del pie de página */
+footer a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+/* Estilo para la clase de requerido */
+.required {
+    color: #FF4136; /* Color rojo para el asterisco que indica que el campo es obligatorio */
 }

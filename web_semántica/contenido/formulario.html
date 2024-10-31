@@ -9,116 +9,114 @@
     <link rel="stylesheet" href="../css/formulario.css">
 </head>
 <body>
+    <main>
+        <header>
+            <h2>Formulario semántico</h2>
+        </header>
 
-<main class="form-container">
-    <header>
-        <h2>Formulario semántico</h2>
-    </header>
+        <section>
+            <form>
 
-    <section>
-        <form>
+                <div>
+                    <label for="nombre">Nombre:<span class="required">*</span></label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-            <div class="espacio">
-                <label for="nombre">Nombre:<span class="required">*</span></label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
+                <div>
+                    <label for="apellido">Apellidos:<span class="required">*</span></label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
 
-            <div class="espacio">
-                <label for="apellido">Apellidos:<span class="required">*</span></label>
-                <input type="text" id="apellido" name="apellido" required>
-            </div>
+                <div>
+                    <label for="correo">Correo Electrónico:<span class="required">*</span></label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
 
-            <div class="espacio">
-                <label for="correo">Correo Electrónico:<span class="required">*</span></label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
+                <div>
+                    <label for="telefono">Teléfono:<span class="required">*</span></label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
 
-            <div class="espacio">
-                <label for="telefono">Teléfono:<span class="required">*</span></label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
+                <div>
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:<span class="required">*</span></label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
 
-            <div class="espacio">
-                <label for="fecha-nacimiento">Fecha de Nacimiento:<span class="required">*</span></label>
-                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
-            </div>
-
-            <div class="espacio">
-                <label>Género:</label>
-                <input type="radio" name="radio" value="opcion1"> Masculino:<br>
-                <input type="radio" name="radio" value="opcion2"> Femenino:<br>
-                <input type="radio" name="radio" value="opcion3"> Otro:<br>
-            </div>
+                <div>
+                    <label>Género:</label>
+                    <input type="radio" name="radio" value="opcion1"> Masculino:<br>
+                    <input type="radio" name="radio" value="opcion2"> Femenino:<br>
+                    <input type="radio" name="radio" value="opcion3"> Otro:<br>
+                </div>
 
 
-            <div class="espacio">
-                <label for="hora">Hora Actual:</label>
-                <input type="time" id="hora" name="hora">
-            </div>
+                <div>
+                    <label for="hora">Hora Actual:</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
 
-            <div class="espacio">
-                <label for="semana">Semana Actual:</label>
-                <input type="week" id="semana" name="semana">
-            </div>
+                <div>
+                    <label for="semana">Semana Actual:</label>
+                    <input type="week" id="semana" name="semana">
+                </div>
 
-            <div class="espacio">
-                <label for="mes">Mes y Año Actual:</label>
-                <input type="month" id="mes" name="mes">
-            </div>
+                <div>
+                    <label for="mes">Mes y Año Actual:</label>
+                    <input type="month" id="mes" name="mes">
+                </div>
 
-            <div class="espacio">
-                <label for="color">Color Favorito:</label>
-                <input type="color" id="color" name="color">
-            </div>
+                <div>
+                    <label for="color">Color Favorito:</label>
+                    <input type="color" id="color" name="color">
+                </div>
             
-            <div class="espacio">
-                <label for="number">Número Favorito:</label>
-                <input type="number" id="number">
-            </div>
+                <div>
+                    <label for="number">Número Favorito:</label>
+                    <input type="number" id="number">
+                </div>
 
-            <div class="espacio">
-                <label for="busqueda">Búsqueda algo interesante:</label>
-                <input type="search" id="busqueda" name="busqueda">
-            </div>
+                <div>
+                    <label for="busqueda">Búsqueda algo interesante:</label>
+                    <input type="search" id="busqueda" name="busqueda">
+                </div>
             
-            <div class="espacio">
-                <label for="archivo">Archivo:</label>
-                <input type="file" id="archivo" name="archivo">
-            </div>
+                <div>
+                    <label for="archivo">Archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+                </div>
             
-            <div class="espacio">
-                <label for="url">Blog/Repositorio:</label>
-                <input type="url" id="url" name="url">
-            </div>
+                <div>
+                    <label for="url">Blog/Repositorio:</label>
+                    <input type="url" id="url" name="url">
+                </div>
             
-            <div class="espacio">
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contrasena" name="contraseña" required>
-            </div>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contraseña" required>
+                </div>
             
-            <div class="espacio">
-                <input type="hidden" id="hidden" value="Valor oculto">
-            </div>
+                <div>
+                    <input type="hidden" id="hidden" value="Valor oculto">
+                </div>
 
-            <div class="espacio">
-                <label for="range">Satisfacción:</label>
-                <input type="range" id="range">
-            </div>
+                <div>
+                    <label for="range">Satisfacción:</label>
+                    <input type="range" id="range">
+                </div>
 
-            <div class="espacio">
-                Acepte los términos y las condiciones:<input type="checkbox" id="checkbox">
-            </div>
+                <div>
+                    Acepte los términos y las condiciones:<input type="checkbox" id="checkbox">
+                </div>
 
-            <div class="espacio">
-                <input type="reset" value="Restablecer">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-    </section>
-    <footer>
-        <a href="../index.html">Volver a la página principal de la web semantica</a>
-    </footer>
-</main>
-
+                <div>
+                    <input type="reset" value="Restablecer">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <a href="../index.html">Volver a la página principal de la web semantica</a>
+        </footer>
+    </main>
 </body>
 </html>
