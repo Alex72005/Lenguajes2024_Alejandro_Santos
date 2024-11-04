@@ -1,0 +1,103 @@
+body{
+    width: 1200px;
+    margin: auto;
+    
+}
+table{
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.caja{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.caja1{
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+    padding-top: 10%;
+    padding-left: 10%
+}
+
+.caja2{
+    background-color: yellow;
+    border-color: black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left-width: 70px;
+    border-left-color: black;
+    border-style: solid;
+    width:200px;
+    height: 200px;
+    margin: auto;
+}
+
+.caja3{
+    background-color: coral;
+    border-style: groove;
+    border-width: 20px;
+    border-color: coral;
+}
+
+.caja4{
+    border-style: inset;
+    background-color: #00ff78;
+    border-width: 20px;
+    border-top-right-radius: 30px;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: green;
+    border-right-color: green;
+    border-bottom-left-radius: 30px;
+}
+
+.caja5{
+    height: 400px;
+    border-radius: 50%;
+    background-color: aqua;
+    border-style: dashed;
+    border-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja6{
+    background-color: violet;
+    border-style: inset;
+    border-width: 20px;
+    border-left-color: blue;
+    border-top-color: blue;
+    border-right-color: black;
+    border-bottom-color: black;
+}
+
+.caja7{
+    background:linear-gradient(red,orangered,yellow);
+    border-bottom-width: 20px;
+    border-color: red;
+    border-style: solid;
+}
+
+.caja8{
+    border-width: 20px;
+    border-top-color: yellow;
+    border-left-color: blue;
+    border-bottom-color: red;  
+    border-right-color: green;
+    background-color: white;
+    border-style: solid;
+}
+
+.caja9{
+    border: 30px double;
+    border-radius: 50px;
+    border-color: blueviolet;
+
+}
