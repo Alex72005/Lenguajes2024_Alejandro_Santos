@@ -1,6 +1,7 @@
 body{   
     max-width: 1200px; /*Define el ancho maximo para la pagina*/
     margin: auto; /*Centra el contenido horizontalmente*/
+    background-color: #b3b6b7;
 }
 
 h1{
@@ -30,6 +31,9 @@ li{
     justify-content: center; /* Centra horizontalmente */
     align-items: center;     /* Centra verticalmente */
     
+}
+li a{
+    padding:1px;
 }
 
 footer{ 
