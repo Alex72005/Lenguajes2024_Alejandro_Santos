@@ -1,0 +1,97 @@
+body{
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+    
+}
+
+h1{
+    color: white; /*Cambio el color del texto a blanco*/
+    text-align: center;/*Pongo el texto centrado*/
+    font-family: Arial, Helvetica, sans-serif; /*Le aplico al texto una fuente especifica*/
+    font-size: 40px; /*Le aplico al texto un tamaño específico*/    
+    background-color: blue; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+
+}
+
+table{
+    width: 100%;
+    border-spacing: 0 40px;
+}
+
+td{
+    width: 250px; 
+    height: 400px;
+}
+
+.figura1{
+    border: 200px solid red;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-right-color: yellow;
+    width: 0px;
+    height: 0px;
+}
+
+.figura2{
+    border: 200px solid red;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-right-color: white;
+    width: 0px;
+    height: 0px;
+}
+
+.figura3{
+    border: 200px solid red;
+    border-top-color: blue;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    width: 0px;
+    height: 0px;
+}
+
+.circulo1{
+    background-color: green;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 400px;
+    height: 400px; 
+}
+
+.circulo2{
+    background-color: green;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px; 
+    font-size: 20px;
+    clip-path: inset(0 50% 0 0);
+}
+
+.circulo3{
+    background-color: green;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px; 
+    font-size: 20px;
+    clip-path: inset(50% 0 0 0);
+}
+
+footer{ 
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px; /*Tamaño de la letra*/
+    color: white; /*color de la letra*/ 
+    background-color: blue; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    margin-top: 20px; 
+}
