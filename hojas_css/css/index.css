@@ -1,6 +1,6 @@
-body{
-    width: 1000px; 
-    margin: auto;
+body{   
+    max-width: 1200px; /*Define el ancho maximo para la pagina*/
+    margin: auto; /*Centra el contenido horizontalmente*/
 }
 
 h1{
@@ -14,12 +14,30 @@ h1{
 
 }
 
+ul{
+    list-style-type: none; /* Elimina los puntos de la lista por defecto */
+    padding: 0px; /*No agrego ningun espacio*/
+    margin: 0 auto; /*Centro la lista alrededor del contenido*/
+    text-align: center; /*Pongo el texto centrado*/
+    margin-top: 100px; /*Pongo un margen encima de la lista para separarla del titulo*/
+}
+li{
+    background-color: blue; /*Color de cada recuadro de cada elemento de la lista*/
+    border-radius: 15px; /*Borde del recuadro con  esquinas redondas*/
+    padding: 1px; /*El espacio */
+    margin-bottom: 50px; /*Pongo un margen debajo de cada elemento para separarlos */
+    display: flex; /* Organiza los elementos en una fila horizontal */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    
+}
+
 footer{ 
     margin-top: 100px;
     text-align: center;
 }
 
-footer a{
+a{
     text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
     font-weight: bold; /* Hace el texto de los enlaces en negrita */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -27,6 +45,6 @@ footer a{
     color: white; /*color de la letra*/ 
     background-color: blue; /*El color del recuadro*/
     border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
-    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    padding: 15px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
     margin-top: 20px; 
 }

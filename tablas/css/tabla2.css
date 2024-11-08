@@ -2,6 +2,24 @@ body{
     width: 1000px; 
     margin: auto;
 }
+
+table{
+    width: 100%;
+    height: 250px;
+    border-collapse: collapse;
+}
+
+table, td{
+    border: 1px solid black;
+}
+
+td{
+    min-width: 100px;
+    min-height: 100px;  
+    padding: 10px;
+    text-align: center;
+}
+
 a{
     text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
     font-weight: bold; /* Hace el texto de los enlaces en negrita */

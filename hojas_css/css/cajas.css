@@ -3,11 +3,13 @@ body{
     margin: auto;
     
 }
+
 table{
     margin: auto;
     margin-top: 100px;
 
 }
+
 h1{
     color: white; /*Cambio el color del texto a blanco*/
     text-align: center;/*Pongo el texto centrado*/
