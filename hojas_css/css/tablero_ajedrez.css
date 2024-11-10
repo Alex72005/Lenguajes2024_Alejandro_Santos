@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    margin: 0;
+}
+
+.division1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: white; /*Cambio el color del texto a blanco*/
+    text-align: center;/*Pongo el texto centrado*/
+    font-family: Arial, Helvetica, sans-serif; /*Le aplico al texto una fuente especifica*/
+    font-size: 40px; /*Le aplico al texto un tamaño específico*/    
+    background-color: blue; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #a0522d;
+    width: 80vmin;
+    height: 80vmin;
+}
+
+td {
+    width: 10vmin;
+    height: 10vmin;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.black {
+    background-color: #b58863;
+}
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+footer{ 
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px; /*Tamaño de la letra*/
+    color: white; /*color de la letra*/ 
+    background-color: blue; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    margin-top: 20px; 
+}

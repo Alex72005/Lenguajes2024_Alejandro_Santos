@@ -22,6 +22,7 @@ ul{
     text-align: center; /*Pongo el texto centrado*/
     margin-top: 100px; /*Pongo un margen encima de la lista para separarla del titulo*/
 }
+
 li{
     background-color: blue; /*Color de cada recuadro de cada elemento de la lista*/
     border-radius: 15px; /*Borde del recuadro con  esquinas redondas*/
@@ -32,13 +33,9 @@ li{
     align-items: center;     /* Centra verticalmente */
     
 }
+
 li a{
     padding:1px;
-}
-
-footer{ 
-    margin-top: 100px;
-    text-align: center;
 }
 
 a{
