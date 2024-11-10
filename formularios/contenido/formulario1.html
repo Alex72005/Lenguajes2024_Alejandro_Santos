@@ -7,20 +7,21 @@
     <title>Formulario 1</title>
     <link rel="stylesheet" href="../css/formulario1.css">
 </head>
-<body style="width: 1000px; margin: auto;">
+<body>
+    <h1 class="titulo">Formulario 1</h1>
     <!--Archivo formulario inscripcion al sistema--> 
     <table>
         <tr>
             <td>
                 <img src="../images/hoja.png" alt="Imagen">
             </td>
-            <td style="vertical-align: middle;">
+            <td>
                 <h1>Formulario de Inscripción al Sistema</h1>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <p style="color: red; text-align: right;">
+                <p>
                     Todos los campos son obligatorios
                 </p>
             </td>
@@ -45,18 +46,19 @@
         Repita contraseña: <input type="text"> <br><br>
         Correo electrónico: <input type="text"> <br><br>
         <center>
-            <label style="text-align: center;">
-            <input type="checkbox" id="terms" name="terms" required> He leído y acepto los términos del sistema
+            <label class="label1">
+                <input type="checkbox" id="terms" name="terms" required> He leído y acepto los términos del sistema
             </label>
         </center>
         <br>
         <center>
             <label for="button">
-            <input type="button" id="button" value="Enviar formulario" onclick="alert('Hiciste clic en el botón.')"><br><br>
+                <input type="button" id="button" value="Enviar formulario" onclick="alert('Hiciste clic en el botón.')"><br><br>
             </label>
         </center>
-
     </form>
-    <a href="../index.html">Volver a la página principal de la web</a>
+    <footer>
+        <a href="../index.html">Volver a la página principal Formularios</a>
+    </footer>
 </body>
 </html> 

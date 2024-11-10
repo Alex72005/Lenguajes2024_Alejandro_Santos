@@ -46,6 +46,7 @@ img {
 a {
     color: #FF851B; /* Color naranja para el enlace */
     text-decoration: none; /* Elimina el subrayado predeterminado en enlaces */
+    text-align: center;
 }
 
 /* Efecto hover para enlaces */
@@ -70,6 +71,9 @@ a {
     text-align: center; /* Centra el texto dentro del botón */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Sombra alrededor del botón */
     margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+    display: flex; /* Organiza los elementos en una fila horizontal */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
 }
 
 /* Efecto hover para el botón de retorno */

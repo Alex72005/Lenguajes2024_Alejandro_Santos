@@ -72,6 +72,9 @@ article a{
     text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
     color: white; /*Color de la letra*/
     font-weight: bold; /*Letra en negrita*/
+    display: flex; /* Organiza los elementos en una fila horizontal */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
     
 }
 /* Medios */

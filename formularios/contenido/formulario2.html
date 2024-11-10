@@ -6,47 +6,54 @@
     <title>Formulario 2</title>
     <link rel="stylesheet" href="../css/formulario2.css">
 </head>
-<body style="width: 1000px; margin: auto;">
+<body>
     <!--Formulario de Contacto-->
-    <table class="tabla">
-        <tr>
-            <td>
-                <table class="tabla2">
-                    <tr>
-                        <td>
-                            <div class="estilo">
-                                <h1>Formulario de contacto</h1>
-                                <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+    <div class="division1">
+        <header>
+            <h1 class="titulo">Formulario 2</h1>
+        </header>
+        <table class="tabla">
+            <tr>
+                <td>
+                    <table class="tabla2">
+                        <tr>
+                            <td>
+                                <div class="estilo">
+                                    <h1>Formulario de contacto</h1>
+                                    <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+                                <form>
+                                    <label for="nombre">Nombre <span class="required">*</span></label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
                     
-                            <form>
-                                <label for="nombre">Nombre <span class="required">*</span></label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
                     
-                                <label for="email">Email <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
                     
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                                    <label for="website">Sitio web</label>
+                                    <input type="url" id="website" name="website" placeholder="Escribe la URL de tu web">
                     
-                                <label for="website">Sitio web</label>
-                                <input type="url" id="website" name="website" placeholder="Escribe la URL de tu web">
+                                    <label for="asunto">Asunto <span class="required">*</span></label>
+                                    <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
                     
-                                <label for="asunto">Asunto <span class="required">*</span></label>
-                                <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+                                    <label for="mensaje">Mensaje <span class="required">*</span></label>
+                                    <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
                     
-                                <label for="mensaje">Mensaje <span class="required">*</span></label>
-                                <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
-                    
-                                <input type="submit" value="ENVIAR">
-                            </form>
-                            <p class="note">* Los campos son obligatorios.</p>
-                            </div> 
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <a href="../index.html">Volver a la página principal de la web</a>
+                                    <input type="submit" value="ENVIAR">
+                                </form>
+                                <p class="nota">* Los campos son obligatorios.</p>
+                                </div> 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <footer>
+            <a href="../index.html">Volver a la página principal Formularios</a>
+        </footer>
+    </div>
 </body>
 </html>

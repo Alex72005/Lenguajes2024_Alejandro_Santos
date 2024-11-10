@@ -2,7 +2,37 @@ body{
     width: 1000px; 
     margin: auto;
 }
-a{
+
+.titulo{
+    color: white; /*Cambio el color del texto a blanco*/
+    text-align: center;/*Pongo el texto centrado*/
+    font-family: Arial, Helvetica, sans-serif; /*Le aplico al texto una fuente especifica*/
+    font-size: 40px; /*Le aplico al texto un tamaño específico*/    
+    background-color: blue; /*El color del recuadro*/
+    border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
+    padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+
+}
+
+td h1{
+    vertical-align: middle;
+}
+
+p{
+    color: red;
+    text-align: right;
+}
+
+.label1{
+    text-align: center;
+}
+
+footer{ 
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer a{
     text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
     font-weight: bold; /* Hace el texto de los enlaces en negrita */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
