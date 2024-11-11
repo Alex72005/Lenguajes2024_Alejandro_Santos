@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .tablero{
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            flex-direction: column-reverse;
+           
+        }
+
+        .blanca{
+            background-color: whitesmoke;
+        }
+
+        .negra{
+            background-color: black;
+        }
+        
+        .casilla{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding-top: 90px;
+        }
+
+        .fila{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Tablero</h1>
+    <div class="tablero">
+        <div class="fila">
+            <div class="casilla blanca"></div>
+            <div class="casilla negra"></div>
+            <div class="casilla blanca"></div>
+            <div class="casilla negra"></div>
+        </div>
+        <div class="fila">
+            <div class="casilla negra"></div>
+            <div class="casilla blanca"><img src="n_dama.png"></div>
+            <div class="casilla negra"></div>
+            <div class="casilla blanca"></div>
+        </div>
+        <div class="fila">
+            <div class="casilla blanca"></div>
+            <div class="casilla negra"></div>
+            <div class="casilla blanca"></div>
+            <div class="casilla negra"></div>
+        </div>
+        <div class="fila">
+            <div class="casilla negra"></div>
+            <div class="casilla blanca"></div>
+            <div class="casilla negra"></div>
+            <div class="casilla blanca"></div>
+        </div>
+    </div>
+</body>
+</html>
