@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .tablero {
+      position: relative;
+      margin: auto;
+      width: 400px;
+      height: 400px;
+      border: 1px solid black;
+    }
+
+    .casilla {
+      position:absolute;
+      width: 200px;
+      height: 200px;
+      margin: 0px;
+      
+    }
+    .blanca{
+        background-color: aliceblue;
+    }
+    .negra{
+        background-color: rgb(32, 101, 206);
+    }
+    .fila1 {
+      top: 0px;
+    }
+    .fila2{
+      top:200px
+    }
+    .casilla1{
+      left: 0px;
+    }
+    .casilla2{
+      left: 200px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Con position</h1>
+  <div class="tablero">
+    <div class="casilla negra fila1 casilla1 ">a</div>
+    <div class="casilla blanca fila1 casilla2">b</div>
+    <div class="casilla blanca fila2 casilla1">a</div>
+    <div class="casilla negra fila2 casilla2">b</div>
+    
+    
+  </div>
+</body>
+</html>

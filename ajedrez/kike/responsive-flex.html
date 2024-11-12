@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center; 
+    }
+
+    .tablero {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:nowrap;
+      margin: auto;
+      width: 60vmin;
+      height: 60vmin;
+      border: 1px solid black;
+    }
+    .fila{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .casilla {
+      width: 20vmin;
+      height: 20vmin;
+      margin: 0px;
+      
+    }
+    .blanca{
+        background-color: aliceblue;
+    }
+    .negra{
+        background-color: rgb(32, 101, 206);
+    }
+   img{
+    width: 100%;
+   }
+   h1{
+    font-size: 8vmin;
+   }
+  </style>
+</head>
+<body>
+    <h1>Responsive con flex</h1>
+  <div class="tablero">
+    <div class="fila">
+    <div class="casilla negra ">a</div>
+    <div class="casilla blanca"><img src="n_dama.png" alt=""></div>
+    <div class="casilla negra ">a</div>
+  </div>
+  <div class="fila">
+    <div class="casilla blanca">a</div>
+    <div class="casilla negra">b</div>
+    <div class="casilla blanca">a</div>
+  </div>
+  <div class="fila">
+    <div class="casilla negra ">a</div>
+    <div class="casilla blanca">b</div>
+    <div class="casilla negra ">a</div>
+  </div>
+  </div>
+</body>
+</html>

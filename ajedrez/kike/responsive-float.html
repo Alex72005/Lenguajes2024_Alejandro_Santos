@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .container {
+      margin: auto;
+      width: 40vmin;
+      height: 40vmin;
+      border: 1px solid black;
+    }
+
+    .casilla {
+      width: 20vmin;
+      height: 20vmin;
+      margin: 0px;
+      float: left;
+    }
+    .blanca{
+        background-color: aliceblue;
+    }
+    .negra{
+        background-color: rgb(32, 101, 206);
+    }
+    .clear {
+      clear: left;
+    }
+    h1{
+      font-size: 8vmin;
+    }
+  </style>
+</head>
+<body>
+    <h1>Float y clear</h1>
+  <div class="container">
+    <div class="casilla negra ">a</div>
+    <div class="casilla blanca">b</div>
+    <div class="casilla blanca clear ">a</div>
+    <div class="casilla negra">b</div>
+    
+    
+  </div>
+</body>
+</html>
