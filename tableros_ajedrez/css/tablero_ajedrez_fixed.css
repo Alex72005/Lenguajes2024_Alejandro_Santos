@@ -59,6 +59,24 @@ footer a{
     margin-top: 20px; 
 }
 
+.boton {
+    position: fixed;
+    bottom: 2px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
+    justify-content: center;  /* Centra la imagen dentro del botón */
+    align-items: center;  /* Alinea la imagen verticalmente */
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}   
+
+
+
 .fila1.columna1 {
     top: 0px;
     left: 0px;
