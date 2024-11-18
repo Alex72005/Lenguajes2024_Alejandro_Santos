@@ -14,7 +14,10 @@ h1{
     background-color: blue; /*El color del recuadro*/
     border-radius: 15px; /*El borde del recuadro, que seria con las esquinas redondas*/
     padding: 25px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
+    position: sticky;
+    top: 3px;
 }
+
 table {
     border-spacing: 0;
     border-collapse: collapse;

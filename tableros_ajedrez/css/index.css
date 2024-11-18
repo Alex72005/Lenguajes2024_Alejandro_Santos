@@ -49,3 +49,12 @@ a{
     padding: 15px; /*EL espacio que agrego alrededor del trexto en el cuadro*/
     margin-top: 20px; 
 }
+
+footer{ 
+    margin-top: 100px;
+    text-align: right;
+}
+
+
+
+
