@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="shortcut icon"
+      href="../../../../medaclogo.png"
+      type="image/x-icon" />
+  <title>Bandera de Somaliland</title>
+  <style>
+ h1{
+  font-size: 3rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.bandera {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  
+}
+
+.rojo{
+    background-color:red;
+    height:33%;
+    width: 100%;
+    float: left;
+}
+
+.verde{
+    background-color:forestgreen;
+    height:33%;
+    width: 100%;
+    float: right;
+}
+.centro{
+    background-color:white;
+    height:34%;
+    width: 100%;
+    float: left;
+}
+
+#estrella {
+    
+    scale: 0.6;
+    margin:50px 200px;
+    position:absolute;
+    top: 240px;
+    display:block; color:black; 
+    width:0px; 
+    height:0px; 
+    border-right:100px solid transparent;
+    border-bottom:70px solid black; 
+    border-left:100px solid transparent; 
+    -moz-transform:rotate(35deg); 
+    -webkit-transform:rotate(35deg); 
+    -ms-transform:rotate(35deg); 
+    -o-transform:rotate(35deg);
+} 
+
+#estrella:before {
+    
+    border-bottom:80px solid black; 
+    border-left:30px solid transparent; 
+    border-right:30px solid transparent; 
+    position:absolute; 
+    height:0; 
+    width:0; 
+    top:-45px; 
+    left:-65px; 
+    display:block; 
+    content:''; 
+    -webkit-transform:rotate(-35deg); 
+    -moz-transform:rotate(-35deg); 
+    -ms-transform:rotate(-35deg); 
+    -o-transform:rotate(-35deg);
+}
+     #estrella:after {
+        position:absolute; 
+        display:block; 
+        color:black; 
+        top:3px; 
+        left:-105px; 
+        width:0px; 
+        height:0px; 
+        border-right:100px solid transparent; 
+        border-bottom:70px solid black; 
+        border-left:100px solid transparent;
+        -webkit-transform:rotate(-70deg); 
+        -moz-transform:rotate(-70deg); 
+        -ms-transform:rotate(-70deg); 
+        -o-transform:rotate(-70deg);
+         content:'';} 
+
+</style>
+  
+</head>
+<body>
+  <h1>Bandera de Somaliland</h1>
+  
+
+  <div class="contenedor">
+  <div class="bandera">
+    <div class="verde"></div>
+    <div class="centro">
+        <div id="estrella"></div>
+    </div>
+    <div class="rojo"></div>
+  </div>
+</div> 
+</body>
+</html>
