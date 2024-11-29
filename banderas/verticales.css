@@ -1,0 +1,40 @@
+#guinea{
+    background-image: linear-gradient(to right, #F00 33.33%, #FFCD00 33.33%, #FFCD00 66.66%, #009E49 66.66%);
+}
+
+#italia{
+    background-image: linear-gradient(to right, #009246 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%);
+}
+
+#irlanda{
+    background-image: linear-gradient(to right, #169B62 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #FF883E 66.66%);
+}
+
+#barbados{
+    background-image: linear-gradient(to right, #005AA7 33.33%, #F9C80E 33.33%, #F9C80E 66.66%, #005AA7 66.66%);
+}
+
+#uomurtia{
+    background-image: linear-gradient(to right, black 33.33%, white 33.33%, white 66.66%, red 66.66%);
+}
+
+#belgica{
+    background-image: linear-gradient(to right, #000000 33.33%, #FCD116 33.33%, #FCD116 66.66%, #D91023 66.66%);
+}
+
+#mali{
+    background-image: linear-gradient(to right, #007847 33.33%, #FCD116 33.33%, #FCD116 66.66%, #D92B27 66.66%);
+}
+
+#marfil{
+    background-image: linear-gradient(to right, #F77C1E 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #009639 66.66%);
+}
+
+#rumania{
+    background-image: linear-gradient(to right, #0033A0 33.33%, #FCD116 33.33%, #FCD116 66.66%, #D10000 66.66%);
+}
+
+#francia{
+    background-image: linear-gradient(to right, #0055A4 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #EF4135 66.66%);
+}
+

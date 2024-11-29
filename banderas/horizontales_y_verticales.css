@@ -1,0 +1,189 @@
+.rojo{
+    background-color:red;
+    height: 100%;
+    width: 27%;
+    float: left;
+
+}
+
+.negro{
+    background-color:black;
+    height:35%;
+    width: 73%;
+    float: right;
+}
+
+.verde{
+    background-color:forestgreen;
+    height:35%;
+    width: 73%;
+    float: right;
+}
+
+.blanco{
+    background-color:white;
+    height:30%;
+    width: 73%;
+    float: right;
+}
+
+.verde1{
+    background-color:forestgreen;
+    height: 100%;
+    width: 20%;
+    float: left;
+
+}
+
+.rojo1{
+    background-color:red;
+    height:35%;
+    width: 80%;
+    float: right;
+}
+
+.azul1{
+    background-color:blue;
+    height:35%;
+    width: 80%;
+    float: right;
+}
+
+.centro1{
+    background-color:white;
+    height:30%;
+    width: 80%;
+    float: right;
+}
+
+.blanco2{
+    background-color:white;
+    height: 100%;
+    width: 30%;
+    float: left;
+
+}
+
+.rojo2{
+    background-color:red;
+    height:50%;
+    width: 70%;
+    float: right;
+}
+
+.verde2{
+    background-color:forestgreen;
+    height:50%;
+    width: 70%;
+    float: right;
+}
+
+.verde3{
+    background-color:forestgreen;
+    height: 100%;
+    width: 33%;
+    float: left;
+
+}
+
+.rojo3{
+    background-color:red;
+    height:50%;
+    width: 67%;
+    float: right;
+}
+
+.amarillo3{
+    background-color:gold;
+    height:50%;
+    width: 67%;
+    float: right;
+}
+
+.verdearriba4{
+    background-color:forestgreen;
+    height:34%;
+    width: 100%;
+    float: left;
+}
+.verdeizq4{
+    background-color:forestgreen;
+    height:66%;
+    width: 30%;
+    float: left;
+}
+.verdecentro4{
+    background-color:forestgreen;
+    height:66%;
+    width: 34%;
+    float: left;
+}
+.rojo4{
+    background-color:red;
+    height:66%;
+    width: 12%;
+    float: left;
+}
+.negro4{
+    background-color:black;
+    height:66%;
+    width: 12%;
+    float: left;
+}
+.naranja4{
+    background-color:darkorange;
+    height:66%;
+    width: 12%;
+    float: right;
+}
+
+.punto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    margin-left: 79px;
+    width: 90px;
+    height: 90px;
+    background-color:red;
+    border-radius: 50%;
+}
+
+.rojoarriba{
+    background-color:red;
+    height:28%;
+    width: 100%;
+    float: left;
+}
+
+.rojoabajo{
+    background-color:red;
+    height:28%;
+    width: 100%;
+    float: right;
+}
+.centro2{
+    background-color:darkblue;
+    height:44%;
+    width: 100%;
+    float: left;
+}
+
+.punto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-left: 95px;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
