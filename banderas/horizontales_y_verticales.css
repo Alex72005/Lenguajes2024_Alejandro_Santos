@@ -181,6 +181,203 @@
     border-radius: 50%;
 }
 
+.bandera {
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 0;
+    position: relative;
+}
+
+.cuadroe {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    background-color: #003b6f;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.estrella {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin: auto;
+}
+
+.franja-roja {
+    width: 100%;
+    height: calc(150px / 13);
+    position: absolute;
+    background-color: #B22234;
+}
+
+.franja-blanca {
+    width: 100%;
+    height: calc(150px / 13);
+    position: absolute;
+    background-color: white;
+}
+
+.franja-blanca-1 {
+    top: calc(150px / 13 * 1);
+}
+
+.franja-roja-2 {
+    top: calc(150px / 13 * 2);
+}
+
+.franja-blanca-2 {
+    top: calc(150px / 13 * 3);
+}
+
+.franja-roja-3 {
+    top: calc(150px / 13 * 4);
+}
+
+.franja-blanca-3 {
+    top: calc(150px / 13 * 5);
+}
+
+.franja-roja-4 {
+    top: calc(150px / 13 * 6);
+}
+
+.franja-blanca-4 {
+    top: calc(150px / 13 * 7);
+}
+
+.franja-roja-5 {
+    top: calc(150px / 13 * 8);
+}
+
+.franja-blanca-5 {
+    top: calc(150px / 13 * 9);
+}
+
+.franja-roja-6 {
+    top: calc(150px / 13 * 10);
+}
+
+.franja-blanca-6 {
+    top: calc(150px / 13 * 11);
+}
+
+.franja-roja-7 {
+    top: calc(150px / 13 * 12);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: darkblue;
+}
+
+
+.f1 {
+    background-color: white;
+    width: 800px;
+    height: 60px;
+    bottom: -163px;
+    left: -100px;
+    position: relative;
+    transform: rotate(33deg);
+}
+
+.f2 {
+    background-color: white;
+    width: 800px;
+    height: 60px;
+    bottom: -107px;
+    left: -90px;
+    position: relative;
+    transform: rotate(-33deg);
+}
+
+.f3 {
+    background-color: red;
+    width: 350px;
+    height: 18px;
+    bottom: 32px;
+    left: -43px;
+    position: relative;
+    transform: rotate(33deg);
+}
+
+.f4 {
+    background-color: red;
+    width: 350px;
+    height: 18px;
+    bottom: -158px;
+    left: 300px;
+    position: relative;
+    transform: rotate(33deg);
+}
+
+.f5 {
+    background-color: red;
+    width: 450px;
+    height: 18px;
+    bottom: 105px;
+    left: 300px;
+    position: relative;
+    transform: rotate(-33deg);
+}
+
+.f6 {
+    background-color: red;
+    width: 350px;
+    height: 18px;
+    bottom: -117px;
+    left: -40px;
+    position: relative;
+    transform: rotate(-33deg);
+}
+
+.f7 {
+    top: -23px;
+    background-color: white;
+    width: 800px;
+    height: 60px;
+    position: relative;
+}
+
+.f8 {
+    background-color: white;
+    width: 800px;
+    height: 60px;
+    bottom: -117px;
+    left: -93px;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.f9 {
+    background-color: red;
+    top: -132px;
+    width: 800px;
+    height: 40px;
+    position: relative;
+
+}
+
+.f10 {
+    left: -93px;
+    background-color: red;
+    top: -120px;
+    width: 800px;
+    height: 40px;
+    position: relative;
+    transform: rotate(90deg);
+}
 
 
 
