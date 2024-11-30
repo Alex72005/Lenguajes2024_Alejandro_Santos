@@ -1,0 +1,190 @@
+.cuadroe {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    background-color: #003b6f;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.estrella {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin: auto;
+}
+
+.franja-roja {
+    width: 100%;
+    height: calc(150px / 13);
+    position: absolute;
+    background-color: #B22234;
+}
+
+.franja-blanca {
+    width: 100%;
+    height: calc(150px / 13);
+    position: absolute;
+    background-color: white;
+}
+
+.franja-blanca-1 {
+    top: calc(150px / 13 * 1);
+}
+
+.franja-roja-2 {
+    top: calc(150px / 13 * 2);
+}
+
+.franja-blanca-2 {
+    top: calc(150px / 13 * 3);
+}
+
+.franja-roja-3 {
+    top: calc(150px / 13 * 4);
+}
+
+.franja-blanca-3 {
+    top: calc(150px / 13 * 5);
+}
+
+.franja-roja-4 {
+    top: calc(150px / 13 * 6);
+}
+
+.franja-blanca-4 {
+    top: calc(150px / 13 * 7);
+}
+
+.franja-roja-5 {
+    top: calc(150px / 13 * 8);
+}
+
+.franja-blanca-5 {
+    top: calc(150px / 13 * 9);
+}
+
+.franja-roja-6 {
+    top: calc(150px / 13 * 10);
+}
+
+.franja-blanca-6 {
+    top: calc(150px / 13 * 11);
+}
+
+.franja-roja-7 {
+    top: calc(150px / 13 * 12);
+}
+
+/*Reino unido*/
+.azul25 {
+    background-color: darkblue;
+}
+
+.blanco25a {
+    background-color: white;
+    width: 120%;
+    height: 15%;
+    transform: rotate(30deg);
+    position: relative;
+    top: 65px;
+    left: -21px;
+}
+
+.blanco25b {
+    background-color: white;
+    width: 120%;
+    height: 15%;
+    transform: rotate(-30deg);
+    position: relative;
+    top: 45px;
+    left: -27px;
+}
+
+.blanco25c {
+    background-color: white;
+    width: 100%;
+    height: 15%;
+    position: relative;
+    top: 20px;
+}
+
+.blanco25d {
+    background-color: white;
+    width: 10%;
+    height: 110%;
+    position: relative;
+    left: 115px;
+    top: -70px;
+}
+
+.rojo25a {
+    background-color: red;
+    width: 50%;
+    height: 30%;
+    position: relative;
+    top: 12px;
+    left: 8px;
+}
+
+.rojo25b {
+    background-color: red;
+    width: 60%;
+    height: 30%;
+    position: relative;
+    top: 2px;
+    left: 130px;
+}
+
+.rojo25c {
+    background-color: red;
+    width: 59%;
+    height: 30%;
+    position: relative;
+    top: 2px;
+}
+
+.rojo25d {
+    background-color: red;
+    width: 59%;
+    height: 30%;
+    position: relative;
+    top: -3px;
+    left: 140px;
+}
+
+.rojo25e {
+    background-color: red;
+    width: 100%;
+    height: 70%;
+    float: left;
+    margin-top: 3.5px;
+}
+
+.rojo25f {
+    background-color: red;
+    width: 70%;
+    height: 43%;
+    float: left;
+    margin-left: 3.5px;
+}
+
+.rojo25g {
+    background-color: red;
+    width: 100%;
+    height: 9.7%;
+    float: left;
+}
+
+.rojo25h {
+    background-color: red;
+    width: 70%;
+    height: 45.15%;
+    float: left;
+    margin-left: 3.5px;
+}

@@ -1,0 +1,123 @@
+/*Japon*/
+.punto{
+    border: 36px solid red;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 90px;
+    width: 70px;
+    height: 70px;
+}
+
+/*Laos*/
+.rojoarriba{
+    background-color:red;
+    height:28%;
+    width: 100%;
+    float: left;
+}
+
+.rojoabajo{
+    background-color:red;
+    height:28%;
+    width: 100%;
+    float: right;
+}
+.centro2{
+    background-color:darkblue;
+    height:44%;
+    width: 100%;
+    float: left;
+}
+
+.punto2{
+    margin-top: 3px;
+    margin-left: 95px;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 50%;
+}
+
+/*Nigeria*/
+
+.naranja5{
+    background-color:darkorange;
+    height:33%;
+    width: 100%;
+    float: left;
+}
+
+.verde5{
+    background-color:forestgreen;
+    height:33%;
+    width: 100%;
+    float: right;
+}
+.centro5{
+    background-color:white;
+    height:34%;
+    width: 100%;
+    float: left;
+}
+
+.punto5{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: darkorange;
+    margin-top: 3px;
+    margin-left: 102px;
+}
+    
+/*Paulu*/
+.paulu{
+    background-color: lightblue; 
+}
+.punto6{
+    margin-left: 40px;
+    margin-top: 45px;
+    height: 70px;
+    width: 70px;
+    max-height: 150px;
+    max-width: 150px;
+    background-color:yellow;
+    border-radius: 50%;
+}
+  
+/*Bangladesh*/
+.bangladesh{
+    background-color: forestgreen;
+}
+.punto7{
+    border: 36px solid red;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 65px;
+    width: 70px;
+    height: 70px;
+}
+
+/*Groenlandia*/
+.groenlandia{
+    overflow: hidden;
+}
+
+.semi-rojo {
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.circulo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;  
+    overflow: hidden; /* Recorta cualquier contenido que sobresalga */
+    background: linear-gradient(to top, white 50%, red 50%);
+}

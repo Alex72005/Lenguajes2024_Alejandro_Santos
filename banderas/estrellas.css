@@ -1,0 +1,326 @@
+/*Bissau*/
+.rojo15 {
+    background-color: red;
+    height: 100%;
+    width: 33%;
+    float: left;
+}
+
+.amarillo15 {
+    background-color: gold;
+    height: 50%;
+    width: 67%;
+    float: right;
+}
+
+.verde15 {
+    background-color: forestgreen;
+    height: 50%;
+    width: 67%;
+    float: right;
+}
+
+#estrella15 {
+    scale: 0.4;
+    position: absolute;
+    top: 45px;
+    right: 106px;
+    display: block;
+    color: black;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid black;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+#estrella15:before {
+
+    border-bottom: 80px solid black;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+#estrella15:after {
+    position: absolute;
+    display: block;
+    color: black;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid black;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+/*Burkina*/
+.rojo16 {
+    background-color: red;
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.verde16 {
+    background-color: green;
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.estrella16 {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 105px;
+}
+/*Camerun*/
+.verde17 {
+    background-color: darkgreen;
+    width: 33%;
+    height: 100%;
+    float: left;
+}
+
+.rojo17 {
+    background-color: red;
+    width: 34%;
+    height: 100%;
+    float: left;
+}
+
+.amarillo17 {
+    background-color: yellow;
+    width: 33%;
+    height: 100%;
+    float: left;
+}
+
+.estrella17 {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 12.5px;
+}
+
+/*Somalia*/
+.azul18 {
+    background-color: rgb(26, 122, 182);
+    width: 250px;
+    height: 150px;
+}
+
+.estrella18 {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 85px;
+}
+/*Vietnam*/
+.rojo19 {
+    background-color: red;
+    width: 250px;
+    height: 150px;
+}
+
+.estrella19 {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 85px;
+}
+
+/*Chile*/
+
+.azul20{
+    background-color:blue;
+    height: 50%;
+    width: 33%;
+    float: left;
+}
+
+.blanco20{
+    background-color:white;
+    height:50%;
+    width: 67%;
+    float: right;
+}
+
+.rojo20{
+    background-color:red;
+    height:50%;
+    width: 100%;
+    float: left;
+}
+
+#estrella20 {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 8px;
+} 
+
+/*Ghana*/
+.verde21{
+    background-color:forestgreen;
+    height:33%;
+    width: 100%;
+    float: left;
+}
+
+.rojo21{
+    background-color:red;
+    height:33%;
+    width: 100%;
+    float: right;
+}
+.centro21{
+    background-color:gold;
+    height:34%;
+    width: 100%;
+    float: left;
+}
+
+#estrella21 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-left: 99px;
+    margin-top: 1px;
+} 
+
+/*Surinam*/
+.verdearriba22{
+    background-color:forestgreen;
+    height:15%;
+    width: 100%;
+    float: left;
+}
+
+.verdeabajo22{
+    background-color:forestgreen;
+    height:15%;
+    width: 100%;
+    float: right;
+}
+.centro22{
+    background-color:red;
+    height:40%;
+    width: 100%;
+    float: left;
+}
+
+.blancoarriba22{
+    background-color:white;
+    height:15%;
+    width: 100%;
+    float: left;
+}
+
+.blancoabajo22{
+    background-color:white;
+    height:15%;
+    width: 100%;
+    float: left;
+}
+
+#estrella22{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-top: px;
+    margin-left: 95px;
+}
+
+/*Somaliland*/
+.rojo23{
+    background-color:red;
+    height:33%;
+    width: 100%;
+    float: left;
+}
+
+.verde23{
+    background-color:forestgreen;
+    height:33%;
+    width: 100%;
+    float: right;
+}
+.centro23{
+    background-color:white;
+    height:34%;
+    width: 100%;
+    float: left;
+}
+
+#estrella23 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-left: 99px;
+    margin-top: 1px;
+} 
+
+/*Senegal*/
+.verde24{
+    background-color:forestgreen;
+    height:100%;
+    width: 33%;
+    float: left;
+}
+
+.rojo24{
+    background-color:red;
+    height:100%;
+    width: 33%;
+    float: right;
+}
+.centro24{
+    background-color:yellow;
+    height:100%;
+    width: 34%;
+    float: left;
+}
+
+#estrella24 {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 12.5px;
+}
