@@ -1,0 +1,87 @@
+.checa{
+    background: conic-gradient(at 50% 50%,transparent 0deg 239deg,#08437f 239deg 302deg,transparent 302deg 360deg),
+                linear-gradient(white 50%, #cf0921 50%);
+}
+
+.palestina{
+    background: linear-gradient(to bottom, black 33.3%,white 33.3%, white 66.6%, green 66.6%);
+}
+
+.triangulo1{
+    margin-top: 10%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+
+.bahamas{
+    background: linear-gradient(to bottom, turquoise 33.3%,yellow 33.3%, yellow 66.6%, turquoise 66.6%);
+}
+
+.triangulo2{
+    margin-top: 10%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid black;
+    border-bottom: 50px solid transparent;
+}
+
+.sudan{
+    background: linear-gradient(to bottom, red 33.3%,white 33.3%, white 66.6%, black 66.6%);
+}
+
+.triangulo3{
+    margin-top: 10%;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid green;
+    border-bottom: 50px solid transparent;
+}
+
+.cuba{
+    background: linear-gradient(to bottom, blue 33.33%, white 33.33%, white 66.66%, red 66.66%);
+}
+
+.triangulo4{
+    width: 0;
+    height: 0;
+    border-left: 125px solid red;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.guyana{
+    background-color: green;
+}
+
+.guyana .triangulo-rojo {
+    width: 0;
+    height: 0;
+    border-left: 250px solid yellow;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.guyana .triangulo-amarillo {
+    width: 0;
+    height: 0;
+    border-left: 130px solid red;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+}
