@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo</title>
+    <style>
+        /* Configuración global */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo de la sección hero */
+        .hero {
+            background-color: #3064e8;
+            /* Color verde del fondo */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Fondo decorativo */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            clip-path: polygon(40% 0, 100% 0, 100% 100%, 60% 100%);
+            z-index: 1;
+        }
+
+        /* Contenido */
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="content">
+            <h1>Desarrollo</h1>
+            <p>Creemos plataformas de gestión personalizadas desde cero, integrando las tecnologías más avanzadas y
+                prácticas líderes del sector.</p>
+        </div>
+    </section>
+</body>
+
+</html>
