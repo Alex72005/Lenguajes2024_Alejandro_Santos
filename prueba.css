@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Tablets y móviles*/
+
+.encabezado {
+    background-color: #3064e8;
+    /* Color verde del fondo */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenido primer servicio*/
+.contenido {
+    position: relative;
+}
+
+.contenido h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.service-content {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.service-image {
+    flex: 1;
+    text-align: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido segundo servicio*/
+.service-platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Flex Container for Text and Image */
+.platform-content {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Image Area (Image on the Left) */
+.platform-image {
+    flex: 1;
+    text-align: center;
+}
+
+.platform-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Area */
+.platform-text {
+    flex: 1;
+}
+
+.platform-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 23px;
+}
+
+.platform-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*Ordenador*/
+
+@media (min-width: 668px) {
+
+    /* Estilo de la sección encabezado */
+    .encabezado {
+        background-color: #3064e8;
+        /* Color verde del fondo */
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Contenido primer servicio*/
+    .contenido {
+        position: relative;
+        z-index: 2;
+    }
+
+    .contenido h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .contenido p {
+        font-size: 1.2rem;
+        margin: 10px 0 0;
+    }
+
+    section {
+        margin-top: 70px;
+    }
+
+    .service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: white;
+    }
+
+    /* Flex Container for Text and Image */
+    .service-content {
+        display: flex;
+        gap: 40px;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* Text Area */
+    .service-text {
+        flex: 1;
+    }
+
+    .service-text h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    .service-text p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 22px;
+        text-align: justify;
+    }
+
+    /* Image Area */
+    .service-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .service-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contenido segundo servicio*/
+    .service-platform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: white;
+    }
+
+    /* Flex Container for Text and Image */
+    .platform-content {
+        display: flex;
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* Image Area (Image on the Left) */
+    .platform-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .platform-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Text Area */
+    .platform-text {
+        flex: 1;
+    }
+
+    .platform-text h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 23px;
+    }
+
+    .platform-text p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+}

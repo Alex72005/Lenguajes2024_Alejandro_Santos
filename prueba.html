@@ -5,76 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo</title>
-    <style>
-        /* Configuración global */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Estilo de la sección hero */
-        .hero {
-            background-color: #3064e8;
-            /* Color verde del fondo */
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Fondo decorativo */
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.1);
-            clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
-            z-index: 1;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            clip-path: polygon(40% 0, 100% 0, 100% 100%, 60% 100%);
-            z-index: 1;
-        }
-
-        /* Contenido */
-        .content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .content h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin: 0;
-        }
-
-        .content p {
-            font-size: 1.2rem;
-            margin: 10px 0 0;
-        }
-    </style>
+    <link rel="stylesheet" href="prueba.css">
 </head>
 
 <body>
-    <section class="hero">
-        <div class="content">
-            <h1>Desarrollo</h1>
+    <header class="encabezado">
+        <div class="contenido">
+            <h1>Servicios</h1>
             <p>Creemos plataformas de gestión personalizadas desde cero, integrando las tecnologías más avanzadas y
                 prácticas líderes del sector.</p>
         </div>
+    </header>
+    <section>
+
+        <div class="service-content">
+            <div class="service-text">
+                <h2>Sitios Web</h2>
+                <p>
+                    Diseñamos y desarrollamos sitios web personalizados los cuales potenciamos su funcionalidad con el
+                    desarrollo de plugins especializados.
+                    Desde webs corporativas hasta tiendas online, creamos soluciones digitales que se conectan de manera
+                    eficiente con herramientas y servicios externos.
+                </p>
+                <p>
+                    Ya sea que necesites funcionalidades específicas o conexión con plataformas de gestión externas,
+                    te proporcionamos todo lo necesario para un sistema completo y conectado.
+                </p>
+            </div>
+            <div class="service-image">
+                <img src="mobile-mockup.png" alt="Sitio web en móvil">
+            </div>
+        </div>
+
     </section>
+
+    <section class="service-platform">
+        <div class="platform-content">
+            <div class="platform-image">
+                <img src="platform-mockup.png" alt="Plataforma de Gestión">
+            </div>
+            <div class="platform-text">
+                <h2>Plataformas de Gestión</h2>
+                <p>
+                    Desarrollamos plataformas de gestión completamente adaptadas a las necesidades específicas de tu
+                    negocio.
+                    Ya sea un CRM, ERP, CMS o cualquier otro tipo de sistema, nuestras plataformas no solo mejoran la
+                    productividad, sino que también se conectan sin esfuerzo con otras herramientas y servicios que ya
+                    utilizas, como APIs, módulos externos o sistemas de terceros.
+                </p>
+                <p>
+                    Ponemos especial énfasis en la escalabilidad y la seguridad, asegurándonos de que tu plataforma
+                    evolucione a medida que tu empresa crece, manteniendo la integridad de tus datos.
+                    Cada solución está diseñada para adaptarse a cualquier demanda futura, integrando desde
+                    automatizaciones hasta funcionalidades avanzadas que potencian la eficiencia de tu negocio.
+                </p>
+            </div>
+        </div>
 </body>
 
 </html>
