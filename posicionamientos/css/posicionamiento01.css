@@ -3,6 +3,7 @@ body{
     margin: auto;
     
 }
+
 h1{
     color: white; /*Cambio el color del texto a blanco*/
     text-align: center;/*Pongo el texto centrado*/
@@ -27,7 +28,7 @@ div > h1{
 
 div.azul{
     background-color: blue;
-    width: 100%;
+    width: 50%;
     height: 50%;
     float: left;
 }
