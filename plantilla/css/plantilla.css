@@ -47,6 +47,11 @@ footer{
     justify-content: space-around;
 }
 
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
 .bandera{
     box-sizing: content-box;
     width: 250px;
