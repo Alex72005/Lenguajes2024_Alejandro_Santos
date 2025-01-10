@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Archivo A</title>
+    <meta name="author" content="Alejandro Santos">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="/miniweb/css/claro.css">
+
+     <!-- Archivo CSS con ID "theme" para cambiar el tema -->
+     <link id="theme" rel="stylesheet" type="text/css" href="css/claro.css" />
+
+
+     <!-- Función para activar el tema guardado -->
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            theme.setAttribute('href', localStorage.getItem("tema"));
+        }
+    </script>
+
+</head>
+<body onload="tema_activo()">
+    <!--Archivo con enlace a archivo 3 y al archivo principal de la miniweb-->
+    <h1>Archivo A</h1>
+    <ul>
+        <li><a href="Contenido/archivo_3.html"><h2>Archivo 3</h2></a></li>
+        <li><a href="index.html"><h2>Volver a la página principal de miniweb</h2></a></li>   
+    </ul>
+</body>
+</html>
+
+<!-- width 1200; margin: auto-->
