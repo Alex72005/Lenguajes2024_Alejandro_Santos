@@ -96,21 +96,88 @@
         <h3 style="margin-left: 20px;">DTD</h3>
         <p style="margin-left: 20px;">
             Describe la estructura,es decir, los elementos y el orden. Se puede ubicar de tres maneras distintas:
-        <ol style="margin-left: 20px;">
-            <li>Interna</li>
-            <li>Externa</li>
-            <li>Mixta</li>
-        </ol>
+            <ol>
+                <li>Interna</li>
+                <li>Externa</li>
+                <li>Mixta</li>
+            </ol>
+        </p>
         <h4 style="margin-left: 20px;">Elementos</h4>
+        <p style="margin-left: 20px;">
+            Un ejemplo sería: < !ELEMENT elemento (hijo1, hijo2 ..) > < !ELEMENT elemento (#PCDATA) >
+            Los elementos tienen tres características: 
+            <ul>
+                <li>
+                    Cardinalidad: número de veces que aparece. Existen tres tipos: 
+                    <ul>
+                        <li>?: Aparece 0 o 1 vez</li>
+                        <li>*: Aparece 0 a N veces</li>
+                        <li>+: Aparece 1 a N veces</li>
+                    </ul>
+                </li>
+                <li>
+                    Secuencia: Indica los elementos que deben aparecer. Existen dos tipos: 
+                    <ul>
+                        <li>X,Y: El elemento X tiene que aparecer a continuación del Y</li>
+                        <li>X|Y: Aparece uno de los dos. </li>
+                    </ul>
+                </li>
+                <li>
+                    Combinación: Se pueden combinar la cardinalidad con la secuencia. 
+                </li>
+            </ul>
+        </p>
 
+        <h4 style="margin-left: 20px;">Atributos</h4>
+        <p style="margin-left: 20px;">
+            Un ejemplo sería: < !ATTLIST elemento atributo tipo valor >, < !ATTLIST capitulo paginas CDATA #REQUIRED >
+            Los atributos tienen varios tipos:  
+            <ul>
+                <li>CDATA: Cadena de texto</li>
+                <li>Enumeraciones: Permite indicar varios valores</li>
+                <li>ENTITY: Entidad definida previamente.</li>
+                <li>ENTITIES: Conjunto de entidades.</li>
+                <li>IDREF: Se referencia el identificador de otro elemento.</li>
+                <li>IDREFS: Referencia un conjunto de identificadores.</li>
+                <li>ID: Identificador único para identificar elementos.</li>
+                <li>NOTATION: Se indican datos que no es XML.</li>
+                <li>NMTOKEN: Un nombre sin espacios en blanco.</li>
+                <li>NMTOKENS: Lista de nombres.</li>
+            </ul>
+            Los atributos también tienes varios valores: 
+            <ul>
+                <li>Valor: El valor por defecto del atributo entre comillas.</li>
+                <li>#REQUIRED: El atributo es obligatorio.</li>
+                <li>#IMPLIED: El atributo es opcional.</li>
+                <li>#FIXED valor:  El atributo es obligatorio y se le asigna un valor por defecto siendo el único que puede tener.</li>
+            </ul>
         </p>
+
+        <h4 style="margin-left: 20px;">Entidades</h4>
+        <p style="margin-left: 20px;">
+            Un ejemplo sería: < !ENTITY nombre_entidad valor >, < !ENTITY asignaturas "6" >
+            Existen cinco entidades predefinidas: 
+            <ul>
+                <li>&lt;: Es el signo <.</li>
+                <li>&gt;: Es el signo >.</li>
+                <li>&quot;: Son las comillas rectas dobles, “.</li>
+                <li>&apos;: Es el apóstrofe o comilla simple, ‘.</li>
+                <li>&amp;: Es el ampersand, &.</li>
+            </ul>
         </p>
+
     </main>
 
     <footer>
-
+        Alejandro Santos. 
     </footer>
 
 </body>
 
 </html>
+
+
+
+
+
+
