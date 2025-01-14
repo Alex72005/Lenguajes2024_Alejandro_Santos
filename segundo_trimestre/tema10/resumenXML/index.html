@@ -4,171 +4,189 @@
     <meta charset="UTF-8">
     <meta name="author" content="Alejandro Santos">
     <title>Resumen XML</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
-        <h1>Resumen XML</h1>
-        <hr><br>
+        <h1>Resumen XML</h1>    
         <p>
-            Es un lenguaje de marcas cuyo propósito es compartir datos a través de diferentes sistemas.
+            Permite estructurar, almacenar e intercambiar datos de manera legible, 
+            siendo ampliamente utilizado en aplicaciones web, configuración de 
+            software y comunicación entre sistemas.
         </p>
     </header>
 
     <main>
-        <p>
-            Las características de XML son:
-        <ul>
-            <li>Las etiquetas se definen</li>
-            <li>Consta de dos partes: Prólogo y Cuerpo</li>
-            <li>Utiliza espacios de nombres para evitar ambiguedades</li>
-            <li>Misma sintaxis que en HTML</li>
-            <li>Para que este bien formado, debe cumplir las reglas w3c</li>
-            <li>Usa esquemas en forma de arbol con una unica raiz</li>
-            <li>Se validan los documentos</li>
-        </ul>
-        </p>
-
-        <h2>Estructura documento XML</h2>
-        <p>
-            Consta de dos partes:
-        <ul>
-            <li>Prologo:</li>
-            <ol>
-                <li>Declara el XML</li>
-                <li>Información del documento compuesta por: </li>
+        <section>
+            <h2>¿Qué es XML?</h2>
+            <p>
+                Es un lenguaje de marcas cuyo propósito es compartir datos a través de 
+                diferentes sistemas.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Características de XML</h2>
+            <ul>
+                <li>Las etiquetas se definen</li>
+                <li>Consta de dos partes: Prólogo y Cuerpo</li>
+                <li>Utiliza espacios de nombres para evitar ambiguedades</li>
+                <li>Misma sintaxis que en HTML</li>
+                <li>Para que este bien formado, debe cumplir las reglas w3c</li>
+                <li>Usa esquemas en forma de arbol con una unica raiz</li>
+                <li>Se validan los documentos</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Estructura documento XML</h2>
+            <p>
+                Consta de dos partes:
                 <ul>
-                    <li>Espacio de nombres</li>
-                    <li>Hojas estilo XSLT</li>
-                    <li>Hojas estilo CSS</li>
+                    <li><b>Prologo:</b></li>
+                    <ol>
+                        <li>Declara el XML</li>
+                        <li>Información del documento compuesta por: </li>
+                        <ul class="lista">
+                            <li>Espacio de nombres</li>
+                            <li>Hojas estilo XSLT</li>
+                            <li>Hojas estilo CSS</li>
+                        </ul>
+                    </ol>
+                    <li><b>Cuerpo:</b></li>
+                    <ol>
+                        <li>Arbol del contenido</li>
+                        <li>Unica raiz</li>
+                    </ol>
                 </ul>
-            </ol>
-            <li>Cuerpo:</li>
-            <ol>
-                <li>Arbol del contenido</li>
-                <li>Unica raiz</li>
-            </ol>
-        </ul>
-        </p>
+            </p>
+        </section>
 
-        <h2>Sintaxis XML</h2>
-        <p>
-        <ul>
-            <li>Elemento:</li>
-            <ul>
-                <li>Es fundamental</li>
-                <li>Tiene que tener su etiqueta de apertura y de cierre</li>
-                <li>Contiene un atributo con su valor</li>
-                <li>Contiene un contenido</li>
-            </ul>
-            <li>Elementos vacios:</li>
-            <ul>
-                <li>Se define:
-                    < elemento />
-                </li>
-            </ul>
-        </ul>
-        </p>
+        <section>
+            <h2>Sintaxis XML</h2>
+            <p>
+                <ul>
+                    <li>Elemento:</li>
+                    <ul class="lista">
+                        <li>Es fundamental</li>
+                        <li>Tiene que tener su etiqueta de apertura y de cierre</li>
+                        <li>Contiene un atributo con su valor</li>
+                        <li>Contiene un contenido</li>
+                    </ul>
+                    <li>Elementos vacios:</li>
+                    <ul class="lista">
+                        <li>Se define:
+                            < elemento />
+                        </li>
+                    </ul>
+                </ul>
+            </p>
+        </section>
 
-        <h2>Formacion de documentos</h2>
-        <p>
-            Normas básicas son:
-        <ul>
-            <li>Prólogo definido</li>
-            <li>Estructura de arbol con una unica raiz</li>
-            <li>Etiquetas emparejadas: apertura y cierre</li>
-            <li>Los atributos entre comillas</li>
-            <li>Se distingue las mayusculas de las minusculas</li>
-            <li>Las estiquetas se nombran</li>
-            <li>Los comentarios van fuera de las etiquetas</li>
-        </ul>
-        </p>
-
-        <h2>Validacion de documentos</h2>
-        <p>
-            Hay dos formas:
-        <ol>
-            <li>DTD</li>
-            <li>XML Schema</li>
-        </ol>
-
-        <h3 style="margin-left: 20px;">DTD</h3>
-        <p style="margin-left: 20px;">
-            Describe la estructura,es decir, los elementos y el orden. Se puede ubicar de tres maneras distintas:
-            <ol>
+        <section>
+            <h2>Formacion de documentos</h2>
+            <p>
+                Normas básicas son:
+                <ul class="lista">
+                    <li>Prólogo definido</li>
+                    <li>Estructura de arbol con una unica raiz</li>
+                    <li>Etiquetas emparejadas: apertura y cierre</li>
+                    <li>Los atributos entre comillas</li>
+                    <li>Se distingue las mayusculas de las minusculas</li>
+                    <li>Las estiquetas se nombran</li>
+                    <li>Los comentarios van fuera de las etiquetas</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section>
+            <h2>Validacion de documentos</h2>
+            <h3>DTD</h3>
+            <p class="lista">
+                Describe la estructura, es decir, los elementos y el orden. 
+                Se puede ubicar de tres maneras distintas:
+            </p>
+            <ol class="margen">
                 <li>Interna</li>
                 <li>Externa</li>
                 <li>Mixta</li>
             </ol>
-        </p>
-        <h4 style="margin-left: 20px;">Elementos</h4>
-        <p style="margin-left: 20px;">
-            Un ejemplo sería: < !ELEMENT elemento (hijo1, hijo2 ..) > < !ELEMENT elemento (#PCDATA) >
-            Los elementos tienen tres características: 
-            <ul>
-                <li>
-                    Cardinalidad: número de veces que aparece. Existen tres tipos: 
-                    <ul>
-                        <li>?: Aparece 0 o 1 vez</li>
-                        <li>*: Aparece 0 a N veces</li>
-                        <li>+: Aparece 1 a N veces</li>
-                    </ul>
-                </li>
-                <li>
-                    Secuencia: Indica los elementos que deben aparecer. Existen dos tipos: 
-                    <ul>
-                        <li>X,Y: El elemento X tiene que aparecer a continuación del Y</li>
-                        <li>X|Y: Aparece uno de los dos. </li>
-                    </ul>
-                </li>
-                <li>
-                    Combinación: Se pueden combinar la cardinalidad con la secuencia. 
-                </li>
-            </ul>
-        </p>
 
-        <h4 style="margin-left: 20px;">Atributos</h4>
-        <p style="margin-left: 20px;">
-            Un ejemplo sería: < !ATTLIST elemento atributo tipo valor >, < !ATTLIST capitulo paginas CDATA #REQUIRED >
-            Los atributos tienen varios tipos:  
-            <ul>
-                <li>CDATA: Cadena de texto</li>
-                <li>Enumeraciones: Permite indicar varios valores</li>
-                <li>ENTITY: Entidad definida previamente.</li>
-                <li>ENTITIES: Conjunto de entidades.</li>
-                <li>IDREF: Se referencia el identificador de otro elemento.</li>
-                <li>IDREFS: Referencia un conjunto de identificadores.</li>
-                <li>ID: Identificador único para identificar elementos.</li>
-                <li>NOTATION: Se indican datos que no es XML.</li>
-                <li>NMTOKEN: Un nombre sin espacios en blanco.</li>
-                <li>NMTOKENS: Lista de nombres.</li>
-            </ul>
-            Los atributos también tienes varios valores: 
-            <ul>
-                <li>Valor: El valor por defecto del atributo entre comillas.</li>
-                <li>#REQUIRED: El atributo es obligatorio.</li>
-                <li>#IMPLIED: El atributo es opcional.</li>
-                <li>#FIXED valor:  El atributo es obligatorio y se le asigna un valor por defecto siendo el único que puede tener.</li>
-            </ul>
-        </p>
+            <h4>Elementos</h4>
+            <p class="lista">
+                Su sintaxis es < !ELEMENT elemento (#PCDATA) > y tienen tres características: 
+                <ul class="margen">
+                    <li>
+                        Cardinalidad: número de veces que aparece. Existen tres tipos: 
+                        <ul>
+                            <li>?: Aparece 0 o 1 vez</li>
+                            <li>*: Aparece 0 a N veces</li>
+                            <li>+: Aparece 1 a N veces</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Secuencia: Indica los elementos que deben aparecer. Existen dos tipos: 
+                        <ul>
+                            <li>X,Y: El elemento X tiene que aparecer a continuación del Y</li>
+                            <li>X|Y: Aparece uno de los dos. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Combinación: Se pueden combinar la cardinalidad con la secuencia. 
+                    </li>
+                </ul>
+            </p>
 
-        <h4 style="margin-left: 20px;">Entidades</h4>
-        <p style="margin-left: 20px;">
-            Un ejemplo sería: < !ENTITY nombre_entidad valor >, < !ENTITY asignaturas "6" >
-            Existen cinco entidades predefinidas: 
-            <ul>
-                <li>&lt;: Es el signo <.</li>
-                <li>&gt;: Es el signo >.</li>
-                <li>&quot;: Son las comillas rectas dobles, “.</li>
-                <li>&apos;: Es el apóstrofe o comilla simple, ‘.</li>
-                <li>&amp;: Es el ampersand, &.</li>
-            </ul>
-        </p>
+            <h4>Atributos</h4>
+            <p class="lista">
+                Su sintaxis es < !ATTLIST elemento atributo tipo valor > y existen varios tipos: 
+                <ul class="margen">
+                    <li>CDATA: Cadena de texto</li>
+                    <li>Enumeraciones: Permite indicar varios valores</li>
+                    <li>ENTITY: Entidad definida previamente.</li>
+                    <li>ENTITIES: Conjunto de entidades.</li>
+                    <li>IDREF: Se referencia el identificador de otro elemento.</li>
+                    <li>IDREFS: Referencia un conjunto de identificadores.</li>
+                    <li>ID: Identificador único para identificar elementos.</li>
+                    <li>NOTATION: Se indican datos que no es XML.</li>
+                    <li>NMTOKEN: Un nombre sin espacios en blanco.</li>
+                    <li>NMTOKENS: Lista de nombres.</li>
+                </ul> 
+            </p>
+            <p class="lista">
+                Tambien pueden tener vaios valores: 
+                <ul class="margen">
+                    <li>Valor: El valor por defecto del atributo entre comillas.</li>
+                    <li>#REQUIRED: El atributo es obligatorio.</li>
+                    <li>#IMPLIED: El atributo es opcional.</li>
+                    <li>#FIXED valor:  El atributo es obligatorio y se le asigna un valor por defecto siendo el único que puede tener.</li>
+                </ul>
+            </p>     
 
+            <h4>Entidades</h4>
+            <p class="lista">
+                Su sintaxis es < !ENTITY nombre_entidad valor > y ya existen 5 entidades predefinidas: 
+                <ul class="margen">
+                    <li>&lt;: Es el signo <.</li>
+                    <li>&gt;: Es el signo >.</li>
+                    <li>&quot;: Son las comillas rectas dobles, “.</li>
+                    <li>&apos;: Es el apóstrofe o comilla simple, ‘.</li>
+                    <li>&amp;: Es el ampersand, &.</li>
+                </ul>
+            </p>
+
+            <h3>XLM Schema</h3>
+            <p class="lista">
+                Un lenguaje más complejo que DTD basado en XML. Lo veremos en el siguiente tema. 
+            </p>
+        </section>
     </main>
 
     <footer>
+        <a href="../ejerciciosXML/index.html">Página ejercicios XML</a>
         Alejandro Santos. 
+        <a href="../index.html">Tema 10</a>
     </footer>
 
 </body>
