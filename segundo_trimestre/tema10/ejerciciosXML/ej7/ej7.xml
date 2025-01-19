@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE configuracion SYSTEM "ej7.dtd"> -->
+<?xml-model href="ej7.xsd"?>
+<configuracion>
+    <informacion>
+        <nombre>MiAplicacion</nombre>
+        <version>1.0.0</version>
+        <autor>Juan Pérez</autor>
+    </informacion>
+    
+    <base_datos>
+        <host>localhost</host>
+        <puerto>3306</puerto>
+        <usuario>admin</usuario>
+        <contraseña>password123</contraseña>
+        <nombre_bd>mi_base_de_datos</nombre_bd>
+    </base_datos>
+    
+    <usuario>
+        <tema>oscuro</tema>
+        <idioma>es</idioma>
+        <preferencias>
+            <notificaciones>activadas</notificaciones>
+            <modo_automático>desactivado</modo_automático>
+        </preferencias>
+    </usuario>
+    
+    <parametros>
+        <maximo_intentos>5</maximo_intentos>
+        <modo_debug>desactivado</modo_debug>
+        <registro>log.txt</registro>
+    </parametros>
+</configuracion>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE ficha_tecnica SYSTEM "ej6.dtd"> -->
+<?xml-model href="ej6.xsd"?>
+<ficha_tecnica>
+    <marca>Volkswagen</marca>
+    <modelo>Golf GTI</modelo>
+    <anyo>2023</anyo>
+    <matricula>1234-XYZ</matricula>
+    <combustible>Gasolina</combustible>
+    <potencia>245</potencia>
+</ficha_tecnica>

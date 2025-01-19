@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE pedido SYSTEM "ej12.dtd"> -->
+<?xml-model href="ej12.xsd"?>
+<!-- gestión de pedidos en una tienda online.-->
+<pedido>
+    <id>12345</id>
+    <cliente>
+        <nombre>Maria García</nombre>
+        <direccion>Calle Ficticia 123, Madrid</direccion>
+        <telefono>912345678</telefono>
+        <email>maria.garcia@email.com</email>
+    </cliente>
+    <productos>
+        <producto id="P001">
+            <nombre>Smartphone XYZ</nombre>
+            <cantidad>1</cantidad>
+            <precio_unitario>299.99</precio_unitario>
+        </producto>
+        <producto id="P002">
+            <nombre>Reloj Inteligente</nombre>
+            <cantidad>2</cantidad>
+            <precio_unitario>129.99</precio_unitario>
+        </producto>
+    </productos>
+    <total>559.97</total>
+    <estado_pedido>Procesando</estado_pedido>
+    <fecha_pedido>2025-01-19</fecha_pedido>
+</pedido>

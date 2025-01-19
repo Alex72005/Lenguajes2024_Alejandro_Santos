@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE agenda SYSTEM "ej2.dtd"> -->
+<?xml-model href="ej2.xsd"?>
+<agenda>
+    <contacto>
+        <nombre>Juan Pérez</nombre>
+        <telefono tipo="movil">+34 600 123 456</telefono>
+        <email>juan.perez@example.com</email>
+        <direccion>
+            <calle>Calle Mayor 10</calle>
+            <ciudad>Madrid</ciudad>
+            <codigo_postal>28013</codigo_postal>
+        </direccion>
+    </contacto>
+    <contacto>
+        <nombre>María López</nombre>
+        <telefono tipo="fijo">+34 915 678 901</telefono>
+        <email>maria.lopez@example.com</email>
+        <direccion>
+            <calle>Gran Vía 22</calle>
+            <ciudad>Barcelona</ciudad>
+            <codigo_postal>08010</codigo_postal>
+        </direccion>
+    </contacto>
+</agenda>

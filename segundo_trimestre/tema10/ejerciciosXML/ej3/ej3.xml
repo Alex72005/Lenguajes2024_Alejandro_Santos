@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE menu SYSTEM "ej3.dtd"> -->
+<?xml-model href="ej3.xsd"?>
+<menu>
+    <item>
+        <nombre>Ensalada César</nombre>
+        <descripcion>Lechuga, pollo, crutones, queso parmesano y aderezo César</descripcion>
+        <precio moneda="EUR">8.50</precio>
+        <categoria>Entrante</categoria>
+    </item>
+    <item>
+        <nombre>Paella Valenciana</nombre>
+        <descripcion>Arroz con mariscos, pollo, conejo y verduras</descripcion>
+        <precio moneda="EUR">15.00</precio>
+        <categoria>Plato principal</categoria>
+    </item>
+    <item>
+        <nombre>Tiramisú</nombre>
+        <descripcion>Postre italiano con capas de bizcocho y crema de mascarpone</descripcion>
+        <precio moneda="EUR">5.50</precio>
+        <categoria>Postre</categoria>
+    </item>
+</menu>

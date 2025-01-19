@@ -1,0 +1,18 @@
+<!ELEMENT factura (emisor,cliente,detalles,importeTotal)>
+<!ATTLIST factura numeroFactura NMTOKEN #REQUIRED>
+<!ATTLIST factura fechaEmision NMTOKEN #REQUIRED>
+<!ELEMENT emisor (nombre,cif,telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT cliente (nombre,cif,telefono)>
+<!ELEMENT detalles (articulo+)>
+<!ELEMENT articulo (descripcion,cantidad,oferta,pvp)>
+<!ATTLIST articulo codigo NMTOKEN #REQUIRED>
+<!ATTLIST articulo tipo NMTOKEN #REQUIRED>
+<!ATTLIST articulo importe NMTOKEN #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT oferta (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+<!ELEMENT importeTotal (#PCDATA)>

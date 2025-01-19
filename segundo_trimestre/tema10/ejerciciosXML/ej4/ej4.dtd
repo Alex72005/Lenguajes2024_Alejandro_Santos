@@ -1,0 +1,15 @@
+<!ELEMENT dni (numero,letra,nombre,apellidos,fecha_nacimiento,nacionalidad,direccion,sexo,fecha_emision,fecha_caducidad)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT letra (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT direccion (calle,ciudad,codigo_postal,provincia)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT fecha_emision (#PCDATA)>
+<!ELEMENT fecha_caducidad (#PCDATA)>

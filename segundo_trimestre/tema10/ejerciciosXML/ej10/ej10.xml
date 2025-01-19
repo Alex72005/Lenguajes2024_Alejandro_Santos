@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE meteorologia SYSTEM "ej10.dtd">-->
+<?xml-model href="ej10.xsd"?>
+<meteorologia>
+    <ubicacion>Madrid, España</ubicacion>
+    <fecha>2025-01-19</fecha>
+    <hora>14:00</hora>
+    <temperatura>15.5</temperatura>
+    <humedad>60</humedad>
+    <presion>1013</presion>
+    <viento>
+        <direccion>Oeste</direccion>
+        <velocidad>12</velocidad>
+    </viento>
+    <lluvia>0.0</lluvia>
+</meteorologia>

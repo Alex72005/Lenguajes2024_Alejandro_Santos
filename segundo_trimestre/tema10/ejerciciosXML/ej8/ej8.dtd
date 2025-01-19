@@ -1,0 +1,10 @@
+<!ELEMENT gestion_notas (alumno+)>
+<!ELEMENT alumno (nombre,dni,notas)>
+<!ATTLIST alumno id NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT notas (asignatura+)>
+<!ELEMENT asignatura (nota+)>
+<!ATTLIST asignatura nombre CDATA #REQUIRED>
+<!ELEMENT nota (#PCDATA)>
+<!ATTLIST nota trimestre (1|2|3) #REQUIRED>

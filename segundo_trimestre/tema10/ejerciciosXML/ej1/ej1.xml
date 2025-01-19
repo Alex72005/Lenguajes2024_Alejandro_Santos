@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE catalogo SYSTEM "ej1.dtd"> -->
+<?xml-model href="ej1.xsd"?>
+<catalogo>
+    <libro>
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <editorial>Editorial Anaya</editorial>
+        <isbn>978-84-678-1234-5</isbn>
+        <precio moneda="EUR">19.95</precio>
+        <publicacion>1605</publicacion>
+    </libro>
+    <libro>
+        <titulo>Cien Años de Soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <editorial>Editorial Sudamericana</editorial>
+        <isbn>978-84-9838-998-1</isbn>
+        <precio moneda="USD">25.00</precio>
+        <publicacion>1967</publicacion>
+    </libro>
+</catalogo>

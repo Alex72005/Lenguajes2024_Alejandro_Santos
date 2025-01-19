@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE dni SYSTEM "ej4.dtd"> -->
+<?xml-model href="ej4.xsd"?>
+<dni>
+    <numero>1234678</numero>
+    <letra>Z</letra>
+    <nombre>Juan</nombre>
+    <apellidos>Pérez García</apellidos>
+    <fecha_nacimiento>1990-05-15</fecha_nacimiento>
+    <nacionalidad>Española</nacionalidad>
+    <direccion>
+        <calle>Calle Mayor 10</calle>
+        <ciudad>Madrid</ciudad>
+        <codigo_postal>28013</codigo_postal>
+        <provincia>Madrid</provincia>
+    </direccion>
+    <sexo>Hombre</sexo>
+    <fecha_emision>2020-01-01</fecha_emision>
+    <fecha_caducidad>2030-01-01</fecha_caducidad>
+</dni>

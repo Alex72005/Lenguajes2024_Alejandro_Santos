@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "factura.dtd">
+<factura numeroFactura="F12345" fechaEmision="2025-01-19">
+    <emisor>
+        <nombre>Distribuidora ABC</nombre>
+        <cif>A12345678</cif>
+        <telefono>912345678</telefono>
+    </emisor>
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <cif>B98765432</cif>
+        <telefono>912987654</telefono>
+    </cliente>
+    <detalles>
+        <articulo codigo="A001" tipo="Libro" importe="20.00">
+            <descripcion>El Arte de la Programación</descripcion>
+            <cantidad>2</cantidad>
+            <oferta>SI</oferta>
+            <pvp>10.00</pvp>
+        </articulo>
+        <articulo codigo="B002" tipo="DVD" importe="15.00">
+            <descripcion>Curso de Java para Todos</descripcion>
+            <cantidad>1</cantidad>
+            <oferta>SI</oferta>
+            <pvp>15.00</pvp>
+        </articulo>
+        <articulo codigo="C003" tipo="Varios" importe="5.00">
+            <descripcion>Estuche para DVD</descripcion>
+            <cantidad>3</cantidad>
+            <oferta>NO</oferta>
+            <pvp>1.67</pvp>
+        </articulo>
+    </detalles>
+    <importeTotal>50.00</importeTotal>
+</factura>

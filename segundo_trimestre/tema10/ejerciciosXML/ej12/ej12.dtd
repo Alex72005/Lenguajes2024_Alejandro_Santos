@@ -1,0 +1,15 @@
+<!ELEMENT pedido (id,cliente,productos,total,estado_pedido,fecha_pedido)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT cliente (nombre,direccion,telefono,email)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre,cantidad,precio_unitario)>
+<!ATTLIST producto id NMTOKEN #REQUIRED>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+<!ELEMENT estado_pedido (#PCDATA)>
+<!ELEMENT fecha_pedido (#PCDATA)>

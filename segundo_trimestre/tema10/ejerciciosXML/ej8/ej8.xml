@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE gestion_notas SYSTEM "ej8.dtd"> -->
+<?xml-model href="ej8.xsd"?>
+<gestion_notas>
+    <alumno id="1">
+        <nombre>Juan Pérez</nombre>
+        <dni>12345678A</dni>
+        <notas>
+            <asignatura nombre="Programación Web">
+                <nota trimestre="1">7.5</nota>
+                <nota trimestre="2">8.0</nota>
+                <nota trimestre="3">8.5</nota>
+            </asignatura>
+            <asignatura nombre="Bases de Datos">
+                <nota trimestre="1">6.0</nota>
+                <nota trimestre="2">7.5</nota>
+                <nota trimestre="3">8.0</nota>
+            </asignatura>
+        </notas>
+    </alumno>
+
+    <alumno id="2">
+        <nombre>Maria López</nombre>
+        <dni>23456789B</dni>
+        <notas>
+            <asignatura nombre="Programación Web">
+                <nota trimestre="1">8.0</nota>
+                <nota trimestre="2">8.5</nota>
+                <nota trimestre="3">9.0</nota>
+            </asignatura>
+            <asignatura nombre="Bases de Datos">
+                <nota trimestre="1">7.0</nota>
+                <nota trimestre="2">7.5</nota>
+                <nota trimestre="3">8.0</nota>
+            </asignatura>
+        </notas>
+    </alumno>
+</gestion_notas>

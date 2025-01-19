@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE pokemon SYSTEM "ej9.dtd">-->
+<?xml-model href="ej9.xsd"?>
+<pokemon>
+    <nombre>Squirtle</nombre>
+    <numeroPokedex>0007</numeroPokedex>
+    <imagen>007.png</imagen>
+    <descripcion>Un Pokémon creado para la gestión de datos en el curso DAW.</descripcion>
+    <tipo>agua</tipo>
+    <genero>masculino</genero>
+    <estado>
+        <habilidades>Agua Veloz</habilidades>
+        <destreza>8</destreza>
+        <nivel>25</nivel>
+        <fuerza>45</fuerza>
+        <faseEvolucion>2</faseEvolucion>
+        <puntosVida>120</puntosVida>
+    </estado>
+</pokemon>

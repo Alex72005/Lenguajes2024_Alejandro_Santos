@@ -1,0 +1,10 @@
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre,telefono,email,direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo (movil|fijo) #REQUIRED>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT direccion (calle,ciudad,codigo_postal)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>

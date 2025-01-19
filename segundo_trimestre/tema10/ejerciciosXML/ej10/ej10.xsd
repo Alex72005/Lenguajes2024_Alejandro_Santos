@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="meteorologia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ubicacion" type="xs:string" />
+                <xs:element name="fecha" type="xs:string" />
+                <xs:element name="hora" type="xs:string" />
+                <xs:element name="temperatura" type="xs:string" />
+                <xs:element name="humedad" type="xs:string" />
+                <xs:element name="presion" type="xs:string" />
+                <xs:element name="viento">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="direccion" type="xs:string" />
+                            <xs:element name="velocidad" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="lluvia" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

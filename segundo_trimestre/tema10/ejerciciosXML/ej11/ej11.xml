@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE tienda SYSTEM "ej11.dtd"> -->
+<?xml-model href="ej11.xsd"?>
+<tienda>
+    <producto id="P001">
+        <nombre>Smartphone XYZ</nombre>
+        <categoria>Electrónica</categoria>
+        <descripcion>Smartphone de última generación con pantalla AMOLED.</descripcion>
+        <precio>299.99</precio>
+        <stock>50</stock>
+        <caracteristicas>
+            <caracteristica>Pantalla 6.5 pulgadas</caracteristica>
+            <caracteristica>Cámara 12 MP</caracteristica>
+            <caracteristica>Procesador Octa-Core</caracteristica>
+        </caracteristicas>
+    </producto>
+    
+    <producto id="P002">
+        <nombre>Laptop ABC</nombre>
+        <categoria>Computadoras</categoria>
+        <descripcion>Laptop ultradelgada con 16 GB de RAM y 512 GB SSD.</descripcion>
+        <precio>899.99</precio>
+        <stock>30</stock>
+        <caracteristicas>
+            <caracteristica>Pantalla 15.6 pulgadas Full HD</caracteristica>
+            <caracteristica>Procesador Intel i7</caracteristica>
+            <caracteristica>Teclado retroiluminado</caracteristica>
+        </caracteristicas>
+    </producto>
+</tienda>

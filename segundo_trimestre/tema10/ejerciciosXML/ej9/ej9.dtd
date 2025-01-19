@@ -1,0 +1,14 @@
+<!ELEMENT pokemon (nombre,numeroPokedex,imagen,descripcion,tipo,genero,estado)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numeroPokedex (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT estado (habilidades,destreza,nivel,fuerza,faseEvolucion,puntosVida)>
+<!ELEMENT habilidades (#PCDATA)>
+<!ELEMENT destreza (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT fuerza (#PCDATA)>
+<!ELEMENT faseEvolucion (#PCDATA)>
+<!ELEMENT puntosVida (#PCDATA)>

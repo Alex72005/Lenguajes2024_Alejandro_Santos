@@ -1,0 +1,10 @@
+<!ELEMENT tienda (producto+)>
+<!ELEMENT producto (nombre,categoria,descripcion,precio,stock,caracteristicas)>
+<!ATTLIST producto id NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT caracteristicas (caracteristica+)>
+<!ELEMENT caracteristica (#PCDATA)>

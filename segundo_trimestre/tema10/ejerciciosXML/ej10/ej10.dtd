@@ -1,0 +1,11 @@
+<!ELEMENT meteorologia (ubicacion,fecha,hora,temperatura,humedad,presion,viento,lluvia)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT temperatura (#PCDATA)>
+<!ELEMENT humedad (#PCDATA)>
+<!ELEMENT presion (#PCDATA)>
+<!ELEMENT viento (direccion,velocidad)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT velocidad (#PCDATA)>
+<!ELEMENT lluvia (#PCDATA)>

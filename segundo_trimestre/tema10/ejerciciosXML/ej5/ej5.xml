@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE tarjeta SYSTEM "ej5.dtd"> -->
+<?xml-model href="ej5.xsd"?>
+<tarjeta>
+    <numero>1234567812345678</numero>
+    <titular>María González</titular>
+    <fecha_vencimiento>2026-12</fecha_vencimiento>
+    <tipo>Visa</tipo>
+    <entidad_emisora>Banco Santander</entidad_emisora>
+</tarjeta>
