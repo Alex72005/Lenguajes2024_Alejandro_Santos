@@ -1,0 +1,25 @@
+{
+    "empresa": "Tech Solutions S.A.",
+    "ubicacion": {
+      "pais": "España",
+      "ciudad": "Madrid",
+      "direccion": "Calle Gran Vía, 45"
+    },
+    "empleados": [
+      {
+        "nombre": "Carlos García",
+        "edad": 30,
+        "cargo": "Desarrollador Web",
+        "habilidades": ["JavaScript", "HTML", "CSS"]
+      },
+      {
+        "nombre": "Ana López",
+        "edad": 25,
+        "cargo": "Diseñadora UX/UI",
+        "habilidades": ["Figma", "Adobe XD", "Sketch"]
+      }
+    ],
+    "proyectosActivos": 5,
+    "esPublica": false
+  }
+  

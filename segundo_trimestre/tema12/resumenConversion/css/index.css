@@ -1,0 +1,83 @@
+/*Hecho por Alejandro Santos*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background-color: #000000; 
+}
+
+/* Encabezado */
+header {
+    background-color: #990000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #FFFFFF; 
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+/* Estilos para títulos de segundo nivel */
+h2 {
+    color: #FF0000; /* Rojo brillante */
+    font-size: 1.8em;
+    border-bottom: 2px solid #FF0000; /* Línea decorativa */
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* Listas */
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 10px;
+    margin-left: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+b {
+    color: #FF0000; /* Rojo destacado */
+}
+
+footer {
+    background-color: #990000; /* Rojo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
