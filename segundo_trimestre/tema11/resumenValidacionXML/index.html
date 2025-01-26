@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejandro Santos">
+    <title>Validación XML Schema</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Validación XML Schema</h1>
+        <p>
+            XML Schema (XSD) es una herramienta poderosa para definir reglas de validación en documentos XML. Mejora las
+            capacidades de DTD al usar la sintaxis XML y permitir la
+            personalización avanzada.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es XML Schema?</h2>
+            <p>
+                Un esquema XML es un archivo que define:
+                <ul>
+                    <li>Elementos y atributos permitidos.</li>
+                    <li>Número y orden de elementos secundarios.</li>
+                    <li>Tipos de datos para elementos y atributos.</li>
+                    <li>Valores predeterminados y fijos.</li>
+                </ul>
+                Los esquemas XML tienen la extensión <code>.xsd</code> y permiten validar documentos XML instanciados.
+            </p>
+        </section>
+
+        <section>
+            <h2>Estructura de un XML Schema</h2>
+            <p>
+                Un esquema XML incluye:
+                <ul>
+                    <li>Declaración de raíz mediante <code>&lt;xs:schema&gt;</code>.</li>
+                    <li>Definición de elementos simples y complejos con <code>&lt;xs:element&gt;</code>.</li>
+                    <li>Restricciones y tipos personalizados para datos específicos.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Elementos Simples y Complejos</h2>
+            <p>
+                Los elementos en XSD pueden ser:
+                <ul>
+                    <li><b>Simples:</b> Definidos con tipos predefinidos (e.g., <code>xs:string</code>,
+                        <code>xs:integer</code>) o personalizados mediante restricciones.
+                    </li>
+                    <li><b>Complejos:</b> Agrupaciones de elementos simples o estructuras anidadas, definidas con
+                        <code>&lt;xs:complexType&gt;</code>.
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Atributos</h2>
+            <p>
+                Los atributos permiten añadir información adicional a los elementos:
+                <ul>
+                    <li>Definidos con <code>&lt;xs:attribute&gt;</code>.</li>
+                    <li>Permiten valores por defecto, opcionales o fijos.</li>
+                    <li>Admiten restricciones como enumeraciones o límites de longitud.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Validación y Asociación</h2>
+            <p>
+                Los documentos XML se asocian al esquema mediante los atributos:
+                <ul>
+                    <li><code>xmlns:xsi</code>: Espacio de nombres XML Schema.</li>
+                    <li><code>xsi:noNamespaceSchemaLocation</code>: Ruta al archivo XSD.</li>
+                </ul>
+                Esto asegura que el documento cumpla con las reglas definidas en el esquema.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        Alejandro Santos.
+        <p>Trabajo de clase</p> 
+        <a href="../index.html">Tema 11</a>
+    </footer>
+
+</body>
+
+</html>

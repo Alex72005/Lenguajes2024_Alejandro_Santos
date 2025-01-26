@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT configuracion (informacion,base_datos,usuario,parametros)>
 <!ELEMENT informacion (nombre,version,autor)>
 <!ELEMENT nombre (#PCDATA)>

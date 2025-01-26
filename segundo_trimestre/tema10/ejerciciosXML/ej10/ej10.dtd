@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT meteorologia (ubicacion,fecha,hora,temperatura,humedad,presion,viento,lluvia)>
 <!ELEMENT ubicacion (#PCDATA)>
 <!ELEMENT fecha (#PCDATA)>

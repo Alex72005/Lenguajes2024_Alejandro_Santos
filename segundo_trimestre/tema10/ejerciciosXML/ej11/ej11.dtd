@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT tienda (producto+)>
 <!ELEMENT producto (nombre,categoria,descripcion,precio,stock,caracteristicas)>
 <!ATTLIST producto id NMTOKEN #REQUIRED>

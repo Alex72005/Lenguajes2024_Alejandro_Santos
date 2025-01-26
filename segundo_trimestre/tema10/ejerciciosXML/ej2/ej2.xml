@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<!DOCTYPE agenda SYSTEM "ej2.dtd"> -->
+<!-- Hecho por Alejandro Santos-->
 <?xml-model href="ej2.xsd"?>
 <agenda>
     <contacto>

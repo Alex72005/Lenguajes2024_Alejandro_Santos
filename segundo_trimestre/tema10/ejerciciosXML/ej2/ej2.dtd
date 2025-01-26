@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT agenda (contacto+)>
 <!ELEMENT contacto (nombre,telefono,email,direccion)>
 <!ELEMENT nombre (#PCDATA)>

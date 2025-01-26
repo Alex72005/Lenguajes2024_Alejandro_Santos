@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT dni (numero,letra,nombre,apellidos,fecha_nacimiento,nacionalidad,direccion,sexo,fecha_emision,fecha_caducidad)>
 <!ELEMENT numero (#PCDATA)>
 <!ELEMENT letra (#PCDATA)>

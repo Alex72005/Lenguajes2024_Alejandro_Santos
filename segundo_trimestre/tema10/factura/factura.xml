@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE factura SYSTEM "factura.dtd">
+<!-- Hecho por Alejandro Santos-->
+<!-- <!DOCTYPE factura SYSTEM "factura.dtd">-->
+<?xml-model href="factura.xsd"?>
 <factura numeroFactura="F12345" fechaEmision="2025-01-19">
     <emisor>
         <nombre>Distribuidora ABC</nombre>

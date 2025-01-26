@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Hecho por Alejandro Santos-->
 <!--<!DOCTYPE pedido SYSTEM "ej12.dtd"> -->
 <?xml-model href="ej12.xsd"?>
 <!-- gestión de pedidos en una tienda online.-->

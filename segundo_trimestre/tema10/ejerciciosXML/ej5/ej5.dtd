@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT tarjeta (numero,titular,fecha_vencimiento,tipo,entidad_emisora)>
 <!ELEMENT numero (#PCDATA)>
 <!ELEMENT titular (#PCDATA)>

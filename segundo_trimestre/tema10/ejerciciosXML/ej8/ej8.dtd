@@ -1,3 +1,4 @@
+<!-- Hecho por Alejandro Santos-->
 <!ELEMENT gestion_notas (alumno+)>
 <!ELEMENT alumno (nombre,dni,notas)>
 <!ATTLIST alumno id NMTOKEN #REQUIRED>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hecho por Alejandro Santos-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="emisor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="cif" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="cif" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="detalles">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="articulo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descripcion" type="xs:string" />
+                                        <xs:element name="cantidad" type="xs:string" />
+                                        <xs:element name="oferta" type="xs:string" />
+                                        <xs:element name="pvp" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo" use="required" />
+                                    <xs:attribute name="tipo" use="required" />
+                                    <xs:attribute name="importe" type="xs:decimal" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="importeTotal" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="numeroFactura" use="required" />
+            <xs:attribute name="fechaEmision" type="xs:date" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
