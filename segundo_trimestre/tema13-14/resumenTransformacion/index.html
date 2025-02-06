@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Alejandro Santos">
@@ -10,59 +11,46 @@
 <body>
     <header>
         <h1>Transformaciones XSL</h1>
-        <p>
-            Este tema abarca herramientas y lenguajes para transformar y trabajar
-            con documentos XML, como XPath, XSLT y formatos de intercambio de 
-            datos como JSON, CSV y YAML.
-        </p>
+            <p>
+                Este tema abarca el uso de XSLT para transformar documentos XML, incluyendo su integración con XPath y
+                XSL-FO, así como herramientas de procesamiento.
+            </p>
     </header>
 
     <main>
         <section>
-            <h2>Lenguajes de Transformación XML</h2>
-            <p>
-                <ul>
-                    <li><b>XPath:</b> Selección y navegación de nodos en documentos XML.</li>
-                    <li><b>XSLT:</b> Transformación de XML a otros formatos como HTML.</li>
-                    <li><b>XSL-FO:</b> Generación de otros formatos como PDF.</li>
-                </ul>
-            </p>
-        </section>
-        
-        <section>
-            <h2>XPath</h2>
-            <p>
-                Un lenguaje para navegar por el árbol de un documento XML:
-                <ul>
-                    <li><b>Propósito:</b> Acceso a nodos, extracción de datos y realización de cálculos.</li>
-                    <li><b>Sintaxis:</b> Usa rutas jerárquicas (/ y //) y filtros avanzados ([]).</li>
-                    <li><b>Nodos:</b> Raíz, elementos, atributos, texto y más.</li>
-                </ul>
-            </p>
+            <h2>Hojas de estilo XSLT</h2>
+                <p>
+                    <ul>
+                        <li><b>Elemento Raiz: </b><code>&lt;stylesheet&gt;</code></li>
+                        <li><b>Asociación de la hoja de estilo XSLT: </b> Se asocia al documento XML en el elemento raíz</li>
+                    </ul>
+                </p>
         </section>
 
         <section>
-            <h2>Formatos de Intercambio de Datos</h2>
-            <p>
-                Diferentes formatos para compartir información entre sistemas:
-                <ul>
-                    <li><b>JSON:</b> Ligero, basado en pares clave-valor, extensamente utilizado en APIs REST.</li>
-                    <li><b>CSV:</b> Formato tabular, ideal para hojas de cálculo.</li>
-                    <li><b>YAML:</b> Estructura jerárquica y legible por humanos, usado en configuraciones.</li>
-                </ul>
-            </p>
+            <h2>Proceso de Transformación XSLT</h2>
+                <p>
+                    <ul>
+                        <li><b>Definición de plantillas:</b> Uso de <code>&lt;stylesheet&gt;</code> y
+                            <code>&lt;xsl:template&gt;</code> para definir transformaciones.</li>
+                        <li><b>Selección de nodos:</b> Mediante <code>&lt;xsl:apply-templates&gt;</code> y XPath.</li>
+                        <li><b>Condiciones:</b> Uso de <code>&lt;xsl:if&gt;</code> y <code>&lt;xsl:choose&gt;</code>.</li>
+                        <li><b>Iteraciones:</b> <code>&lt;xsl:for-each&gt;</code> para recorrer nodos.</li>
+                    </ul>
+                </p>
         </section>
 
         <section>
-            <h2>Comparativa de Formatos</h2>
-            <p>
-                <ul>
-                    <li><b>XML:</b> Extensible y jerárquico, con validación mediante XSD.</li>
-                    <li><b>JSON:</b> Ligero y fácil de procesar en aplicaciones web.</li>
-                    <li><b>CSV:</b> Sencillo y ampliamente compatible con herramientas de datos.</li>
-                    <li><b>YAML:</b> Menos verboso que JSON, ideal para configuraciones.</li>
-                </ul>
-            </p>
+            <h2>Herramientas de Procesamiento</h2>
+                <p>
+                    <ul>
+                        <li><b>Oxygen XML Editor:</b> Editor avanzado para XSLT.</li>
+                        <li><b>Saxon:</b> Procesador XSLT open-source.</li>
+                        <li><b>Xalan:</b> Otra alternativa open-source.</li>
+                        <li><b>Online XSLT Test Tool:</b> Herramienta online para pruebas rápidas.</li>
+                    </ul>
+                </p>
         </section>
     </main>
 
