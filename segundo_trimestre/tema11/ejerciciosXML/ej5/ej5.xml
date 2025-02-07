@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Hecho por Alejandro Santos-->
-<!DOCTYPE tarjeta SYSTEM "ej5.dtd">
+<?xml-model href="ej5.xsd"?>
 <tarjeta>
     <numero>1234567812345678</numero>
     <titular>María González</titular>

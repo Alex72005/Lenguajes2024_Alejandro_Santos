@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE menu SYSTEM "ej3.dtd">
 <!-- Hecho por Alejandro Santos-->
+<?xml-model href="ej3.xsd"?>
 <menu>
     <item>
         <nombre>Ensalada César</nombre>

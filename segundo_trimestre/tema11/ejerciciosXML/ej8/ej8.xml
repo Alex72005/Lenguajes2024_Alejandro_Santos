@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Hecho por Alejandro Santos-->
-<!DOCTYPE gestion_notas SYSTEM "ej8.dtd">
+<?xml-model href="ej8.xsd"?>
 <gestion_notas>
     <alumno id="1">
         <nombre>Juan Pérez</nombre>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Hecho por Alejandro Santos-->
-<!DOCTYPE pokemon SYSTEM "ej9.dtd">
+<?xml-model href="ej9.xsd"?>
 <pokemon>
     <nombre>Squirtle</nombre>
     <numeroPokedex>0007</numeroPokedex>
