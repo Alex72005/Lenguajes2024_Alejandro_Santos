@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <style>
+        :root {
+            --primary-color: blue;
+            --secondary-color: #3f37c9;
+            --border-color: #4895ef;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            line-height: 1.5;
+            min-height: 953px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border-top: 5px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .tarjeta h2 {
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            font-size: 20.8px;
+        }
+
+        .tarjeta-link {
+            display: inline-block;
+            background-color: var(--border-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        .tarjeta-link:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .contenedor {
+                grid-template-columns: 2fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="tarjeta">
+                <h2>Ejercicio 1: <br>Mini Calculadora</h2>
+                <a href="tema18-19/miniCalculadora.html" class="tarjeta-link">Ver</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+    </footer>
+</body>
+
+</html>

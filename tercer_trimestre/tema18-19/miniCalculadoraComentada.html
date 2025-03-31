@@ -1,0 +1,53 @@
+<body>
+    <!-- Etiqueta para el primer número con un campo de entrada numérico -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+
+    <!-- Etiqueta para el segundo número con un campo de entrada numérico -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+
+    <!-- Botón que ejecutará la función calcular() al hacer clic -->
+    <button onclick="calcular()">Calcular</button><br>
+
+    <!-- Sección donde se mostrarán los resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Función que se ejecuta al hacer clic en el botón
+        function calcular() {
+            // Obtiene el valor del primer número y lo convierte a tipo Number
+            const numero1 = Number(document.getElementById("numero1").value);
+
+            // Obtiene el valor del segundo número y lo convierte a tipo Number
+            const numero2 = Number(document.getElementById("numero2").value);
+
+            // Calcula la suma de ambos números
+            const suma = numero1 + numero2;
+
+            // Calcula el producto de ambos números
+            const producto = numero1 * numero2;
+
+            // Variable para almacenar el número mayor
+            let mayor;
+
+            // Comprueba cuál de los dos números es mayor
+            if (numero1 > numero2) {
+                mayor = numero1; // Si el primer número es mayor, lo guarda en 'mayor'
+            } else if (numero2 > numero1) {
+                mayor = numero2; // Si el segundo número es mayor, lo guarda en 'mayor'
+            } else {
+                mayor = "Los números son iguales"; // Si son iguales, muestra un mensaje
+            }
+
+            // Muestra la suma en el span con id "suma"
+            document.getElementById("suma").textContent = suma;
+
+            // Muestra el producto en el span con id "producto"
+            document.getElementById("producto").textContent = producto;
+
+            // Muestra el número mayor en el span con id "mayor"
+            document.getElementById("mayor").textContent = mayor;
+        }
+    </script>
+</body>
