@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Funcional</title>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 para soportar múltiples idiomas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para diseño responsive -->
+    <title>Calculadora Funcional</title> <!-- Título de la página en la pestaña del navegador -->
 </head>
 <body>
-    <label>Primer número: <input type="number" id="numero1"></label><br>
-    <label>Segundo número: <input type="number" id="numero2"></label><br>
-    <button id="calcularBtn">Calcular</button><br>
-    <div>La suma es: <span id="suma"></span></div>
-    <div>El producto es: <span id="producto"></span></div>
-    <div>El número mayor es: <span id="mayor"></span></div>
+    <!-- Interfaz de usuario -->
+    <label>Primer número: <input type="number" id="numero1"></label><br> <!-- Campo para el primer número -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br> <!-- Campo para el segundo número -->
+    <button id="calcularBtn">Calcular</button><br> <!-- Botón para ejecutar los cálculos -->
+    
+    <!-- Secciones de resultados -->
+    <div>La suma es: <span id="suma"></span></div> <!-- Resultado de la suma -->
+    <div>El producto es: <span id="producto"></span></div> <!-- Resultado del producto -->
+    <div>El número mayor es: <span id="mayor"></span></div> <!-- Número mayor o igualdad -->
 
     <script>
+        // Función helper para obtener valores numéricos de inputs
+        // Parámetro: id del elemento HTML
+        // Retorna: valor convertido a número
         const getNumber = (id) => Number(document.getElementById(id).value);
+        
+        // Función helper para mostrar texto en elementos HTML
+        // Parámetros: id del elemento y valor a mostrar
         const setText = (id, value) => document.getElementById(id).textContent = value;
         
+        // Función principal que realiza los cálculos
         const calcular = () => {
+            // 1. Obtener los números usando destructuring assignment
+            // getNumber("numero1") obtiene el valor del primer input como número
+            // getNumber("numero2") obtiene el valor del segundo input como número
             const [numero1, numero2] = [getNumber("numero1"), getNumber("numero2")];
             
+            // 2. Objeto que contiene las operaciones como métodos
+            // Cada propiedad es una función que realiza una operación específica
             const operaciones = {
-                suma: (a, b) => a + b,
-                producto: (a, b) => a * b,
-                mayor: (a, b) => (a === b ? "Los números son iguales" : Math.max(a, b))
+                suma: (a, b) => a + b, // Función para sumar
+                producto: (a, b) => a * b, // Función para multiplicar
+                mayor: (a, b) => (a === b ? "Los números son iguales" : Math.max(a, b)) // Función para determinar el mayor
             };
             
-            setText("suma", operaciones.suma(numero1, numero2));
-            setText("producto", operaciones.producto(numero1, numero2));
-            setText("mayor", operaciones.mayor(numero1, numero2));
+            // 3. Mostrar resultados llamando a las funciones correspondientes
+            setText("suma", operaciones.suma(numero1, numero2)); // Muestra la suma
+            setText("producto", operaciones.producto(numero1, numero2)); // Muestra el producto
+            setText("mayor", operaciones.mayor(numero1, numero2)); // Muestra el mayor o igualdad
         };
         
+        // 4. Asignar el event listener al botón
+        // Cuando se hace click en el botón, se ejecuta la función calcular
         document.getElementById("calcularBtn").addEventListener("click", calcular);
     </script>
 </body>

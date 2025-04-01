@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora con Clases</title>
+    <!-- Configuración básica del documento HTML -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport para diseño responsive -->
+    <title>Calculadora con Clases</title> <!-- Título de la página -->
 </head>
 <body>
-    <label>Primer número: <input type="number" id="numero1"></label><br>
-    <label>Segundo número: <input type="number" id="numero2"></label><br>
-    <button id="calcularBtn">Calcular</button><br>
-    <div>La suma es: <span id="suma"></span></div>
-    <div>El producto es: <span id="producto"></span></div>
-    <div>El número mayor es: <span id="mayor"></span></div>
+    <!-- Interfaz de usuario -->
+    <label>Primer número: <input type="number" id="numero1"></label><br> <!-- Input para el primer número -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br> <!-- Input para el segundo número -->
+    <button id="calcularBtn">Calcular</button><br> <!-- Botón para ejecutar los cálculos -->
+    
+    <!-- Áreas de visualización de resultados -->
+    <div>La suma es: <span id="suma"></span></div> <!-- Resultado de la suma -->
+    <div>El producto es: <span id="producto"></span></div> <!-- Resultado de la multiplicación -->
+    <div>El número mayor es: <span id="mayor"></span></div> <!-- Indicación del número mayor o igualdad -->
 
     <script>
+        // Definición de la clase Calculadora
         class Calculadora {
+            // Constructor de la clase - recibe los IDs de los elementos HTML
             constructor(numero1Id, numero2Id, sumaId, productoId, mayorId) {
-                this.numero1Input = document.getElementById(numero1Id);
-                this.numero2Input = document.getElementById(numero2Id);
-                this.sumaOutput = document.getElementById(sumaId);
-                this.productoOutput = document.getElementById(productoId);
-                this.mayorOutput = document.getElementById(mayorId);
+                // Asignación de elementos del DOM a propiedades de la clase
+                this.numero1Input = document.getElementById(numero1Id); // Input del primer número
+                this.numero2Input = document.getElementById(numero2Id); // Input del segundo número
+                this.sumaOutput = document.getElementById(sumaId); // Elemento para mostrar la suma
+                this.productoOutput = document.getElementById(productoId); // Elemento para mostrar el producto
+                this.mayorOutput = document.getElementById(mayorId); // Elemento para mostrar el mayor
             }
             
+            // Método para obtener el valor numérico de un input
             obtenerNumero(input) {
-                return Number(input.value);
+                return Number(input.value); // Convierte el valor del input a número
             }
             
+            // Método principal que coordina el cálculo
             calcular() {
+                // Obtiene los valores numéricos de los inputs
                 const numero1 = this.obtenerNumero(this.numero1Input);
                 const numero2 = this.obtenerNumero(this.numero2Input);
                 
+                // Muestra los resultados en el DOM
                 this.mostrarResultados(numero1, numero2);
             }
             
+            // Método para mostrar los resultados en la página
             mostrarResultados(numero1, numero2) {
+                // Calcula y muestra la suma
                 this.sumaOutput.textContent = numero1 + numero2;
+                
+                // Calcula y muestra el producto (multiplicación)
                 this.productoOutput.textContent = numero1 * numero2;
-                this.mayorOutput.textContent = numero1 === numero2 ? "Los números son iguales" : Math.max(numero1, numero2);
+                
+                // Determina y muestra el número mayor o si son iguales
+                this.mayorOutput.textContent = numero1 === numero2 
+                    ? "Los números son iguales" 
+                    : Math.max(numero1, numero2);
             }
         }
         
-        const calculadora = new Calculadora("numero1", "numero2", "suma", "producto", "mayor");
+        // Creación de una instancia de la calculadora
+        // Se pasan los IDs de los elementos HTML relevantes
+        const calculadora = new Calculadora(
+            "numero1",  // ID del primer input
+            "numero2",  // ID del segundo input
+            "suma",     // ID del span para la suma
+            "producto", // ID del span para el producto
+            "mayor"     // ID del span para el número mayor
+        );
+        
+        // Asignación del event listener al botón
+        // Cuando se hace click, ejecuta el método calcular de la instancia
         document.getElementById("calcularBtn").addEventListener("click", () => calculadora.calcular());
     </script>
 </body>
