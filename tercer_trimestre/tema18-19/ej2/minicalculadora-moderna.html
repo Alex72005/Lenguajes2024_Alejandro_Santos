@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento HTML -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive -->
+    <title>Calculadora Moderna</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Formulario para ingresar los números -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón para calcular (ahora con ID en lugar de onclick) -->
+    <button id="calcularBtn">Calcular</button><br>
+    
+    <!-- Secciones para mostrar resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Seleccionamos el botón por su ID y le añadimos un event listener para el click
+        document.getElementById("calcularBtn").addEventListener("click", () => {
+            // 1. Obtenemos los valores de los inputs y los convertimos a números
+            const numero1 = Number(document.getElementById("numero1").value);
+            const numero2 = Number(document.getElementById("numero2").value);
+            
+            // 2. Calculamos la suma de los dos números
+            const suma = numero1 + numero2;
+            
+            // 3. Calculamos el producto (multiplicación) de los números
+            const producto = numero1 * numero2;
+            
+            // 4. Determinamos el número mayor usando operador ternario y Math.max
+            // (Versión más moderna que el if-else tradicional)
+            const mayor = numero1 === numero2 
+                ? "Los números son iguales"  // Si son iguales
+                : Math.max(numero1, numero2); // Si no, obtenemos el mayor con Math.max
+            
+            // 5. Actualizamos el DOM con los resultados calculados
+            document.getElementById("suma").textContent = suma;
+            document.getElementById("producto").textContent = producto;
+            document.getElementById("mayor").textContent = mayor;
+        });
+    </script>
+</body>
+</html>

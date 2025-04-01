@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Calculadora Clasica</title> <!-- Título de la página -->
+</head>
+<body>
+    <!-- Campos de entrada para los números -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón que ejecuta la función calcular() cuando se hace clic -->
+    <button onclick="calcular()">Calcular</button><br>
+    
+    <!-- Áreas donde se mostrarán los resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+      // Función principal que realiza los cálculos
+      function calcular() {
+        // 1. Obtener los valores de los inputs y convertirlos a números
+        const numero1 = Number(document.getElementById("numero1").value);
+        const numero2 = Number(document.getElementById("numero2").value);
+        
+        // 2. Calcular la suma de los dos números
+        const suma = numero1 + numero2;
+        
+        // 3. Calcular el producto (multiplicación) de los dos números
+        const producto = numero1 * numero2;
+        
+        // 4. Determinar cuál es el número mayor o si son iguales
+        let mayor; // Variable para almacenar el resultado
+        
+        if (numero1 > numero2) {
+          mayor = numero1; // Si el primero es mayor
+        } else if (numero2 > numero1) {
+          mayor = numero2; // Si el segundo es mayor
+        } else {
+          mayor = "Los números son iguales"; // Si son iguales
+        }
+
+        // 5. Mostrar los resultados en los elementos correspondientes del HTML
+        document.getElementById("suma").textContent = suma;
+        document.getElementById("producto").textContent = producto;
+        document.getElementById("mayor").textContent = mayor;
+      }
+    </script>
+</body>
+</html>
