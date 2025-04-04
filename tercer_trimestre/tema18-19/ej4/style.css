@@ -1,0 +1,153 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: #3f37c9;
+    --border-color: #4895ef;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    line-height: 1.5;
+    min-height: 953px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    border-top: 5px solid var(--border-color);
+}
+
+.inputs-contenedor {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+input {
+    padding: 8px;
+    width: 80px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.tablas-multiplicar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tabla {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-left: 3px solid var(--border-color);
+}
+
+.tabla h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.tabla p {
+    margin: 5px 0;
+    padding: 3px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .contenedor {
+        margin: 0 15px;
+    }
+
+    .tablas-multiplicar {
+        grid-template-columns: 1fr;
+    }
+}

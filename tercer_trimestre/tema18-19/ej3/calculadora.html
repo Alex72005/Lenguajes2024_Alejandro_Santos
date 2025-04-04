@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Santos">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="calculadora">
+                <div class="pantalla">
+                    <input type="text" id="resultado">
+                </div>
+                <div class="teclado">
+                    <button onclick="limpiar()">C</button>
+                    <button onclick="borrar()">CE</button>
+                    <button onclick="operar('/')">÷</button>
+                    <button onclick="operar('*')">x</button>
+                    <button onclick="agregarNumero('7')">7</button>
+                    <button onclick="agregarNumero('8')">8</button>
+                    <button onclick="agregarNumero('9')">9</button>
+                    <button onclick="operar('-')">-</button>
+                    <button onclick="agregarNumero('4')">4</button>
+                    <button onclick="agregarNumero('5')">5</button>
+                    <button onclick="agregarNumero('6')">6</button>
+                    <button onclick="operar('+')">+</button>
+                    <button onclick="agregarNumero('1')">1</button>
+                    <button onclick="agregarNumero('2')">2</button>
+                    <button onclick="agregarNumero('3')">3</button>
+                    <button onclick="operar('1/x')">1/x</button>
+                    <button onclick="agregarNumero('0')">0</button>
+                    <button onclick="agregarNumero('.')">.</button>
+                    <button onclick="operar('raiz')">√</button>
+                    <button onclick="operar('^2')">x²</button>
+                    <button onclick="operar('bin')">Bin</button>
+                    <button onclick="operar('hex')">Hex</button>
+                    <button onclick="calcular()" class="igual">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
