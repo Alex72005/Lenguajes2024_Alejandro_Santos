@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alejandro Santos" />
+    <title>Presupuesto para cajas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Presupuesto para Cajas Personalizadas</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="formulario">
+                <h3>Sección de Cálculo</h3>
+                <label>Ancho (cm): <input type="number" id="ancho" /></label>
+                <label>Alto (cm): <input type="number" id="alto" /></label>
+                <label>Largo (cm): <input type="number" id="largo" /></label>
+                <label>Material:
+                    <select id="material">
+                        <option value="plastico">Plástico</option>
+                        <option value="carton">Cartón</option>
+                        <option value="madera">Madera</option>
+                    </select>
+                </label>
+                <button onclick="calcular()">Calcular</button>
+            </div>
+
+            <div class="formulario">
+                <h3>Sección de Configuración</h3>
+                <label>Precio base por m²: <input type="number" id="precioBase" value="1" /></label>
+                <label>Incremento (%) para Plástico: <input type="number" id="incPlastico" value="20" /></label>
+                <label>Incremento (%) para Cartón: <input type="number" id="incCarton" value="10" /></label>
+                <label>Incremento (%) para Madera: <input type="number" id="incMadera" value="50" /></label>
+                <label>IVA (%): <input type="number" id="iva" value="10" /></label>
+            </div>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
