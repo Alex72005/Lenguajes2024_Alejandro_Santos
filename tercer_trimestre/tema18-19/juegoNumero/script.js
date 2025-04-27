@@ -17,8 +17,8 @@ verificar.addEventListener("click", function () {
         return;
     }
 
-    intentos.textContent = 'Intentos restantes: ' + intentosRestantes;
     intentosRestantes--;
+    intentos.textContent = 'Intentos restantes: ' + intentosRestantes;
 
     if (num === numeroSecreto) {
         mensaje.textContent = "¡Correcto! ¡Has adivinado el número!";
