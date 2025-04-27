@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Santos">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Juego del Número Secreto</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h2>Adivina el número entre 1 y 100</h2>
+
+            <input type="number" id="numero" placeholder="Escribe tu número..." min="1" max="100">
+            <div>
+                <button id="verificar">¡Probar!</button>
+                <button id="restaurar" class="botonVolver">¿Jugar otra vez?</button>
+            </div>
+
+            <p id="mensaje"></p>
+            <p id="intentos">Intentos restantes: 10</p>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
