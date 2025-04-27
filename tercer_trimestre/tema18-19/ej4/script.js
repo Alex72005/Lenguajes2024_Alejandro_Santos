@@ -11,7 +11,6 @@ function generadorTablas() {
     
     contenedorTablas.innerHTML = '';
     
-    
     for (let i = 1; i <= contador; i++) {
         const divTablas = document.createElement('div');
         divTablas.className = 'tabla';
@@ -30,5 +29,5 @@ function generadorTablas() {
     }
 }
 
-// Generar tablas al cargar la página con el valor por defecto
-window.onload = generadorTablas;
+// // Generar tablas al cargar la página con el valor por defecto
+// window.onload = generadorTablas;
