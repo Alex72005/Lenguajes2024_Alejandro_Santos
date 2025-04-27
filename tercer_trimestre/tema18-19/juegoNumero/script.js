@@ -39,7 +39,7 @@ verificar.addEventListener("click", function () {
 });
 
 restaurar.addEventListener("click", function () {
-    numeroSecreto = Math.floor(Math.random() * 100) + 1; 
+    numeroSecreto = Math.floor(Math.random() * 100) + 1;
     intentosRestantes = 10;
     intentos.textContent = "Intentos restantes: 10";
     mensaje.textContent = "";
