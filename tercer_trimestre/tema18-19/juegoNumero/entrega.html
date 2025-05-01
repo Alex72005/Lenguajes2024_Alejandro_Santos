@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Santos">
+    <title>Juego</title>
+    <style>
+        :root {
+            --primary-color: blue;
+            --secondary-color: #3f37c9;
+            --border-color: #4895ef;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            line-height: 1.5;
+            min-height: 991px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+            border-top: 5px solid var(--border-color);
+            text-align: center;
+        }
+
+        .contenedor input {
+            padding: 10px;
+            width: 80%;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contenedor button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .contenedor button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .botonVolver {
+            display: none;
+        }
+
+        .contenedor p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .contenedor {
+                margin: 0 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Juego del Número Secreto</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h2>Adivina el número entre 1 y 100</h2>
+
+            <input type="number" id="numero" placeholder="Escribe tu número..." min="1" max="100">
+            <div>
+                <button id="verificar">¡Probar!</button>
+                <button id="restaurar" class="botonVolver">¿Jugar otra vez?</button>
+            </div>
+
+            <p id="mensaje"></p>
+            <p id="intentos">Intentos restantes: 10</p>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script>
+        let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+        let intentosRestantes = 10;
+
+        const numero = document.getElementById("numero");
+        const verificar = document.getElementById("verificar");
+        const restaurar = document.getElementById("restaurar");
+        const mensaje = document.getElementById("mensaje");
+        const intentos = document.getElementById("intentos");
+
+        verificar.addEventListener("click", function () {
+            const num = Number(numero.value);
+
+            if (num < 1 || num > 100) {
+                mensaje.textContent = "Por favor, introduce un número entre 1 y 100.";
+                numero.value = "";
+                numero.focus(); //para poner el cursor en el input
+                return;
+            }
+
+            intentosRestantes--;
+            intentos.textContent = 'Intentos restantes: ' + intentosRestantes;
+
+            if (num === numeroSecreto) {
+                mensaje.textContent = "¡Correcto! ¡Has adivinado el número!";
+                verificar.disabled = true;
+                restaurar.style.display = "inline-block";
+            } else if (intentosRestantes === 0) {
+                mensaje.textContent = '¡Te has quedado sin intentos! El número era ' + numeroSecreto;
+                verificar.disabled = true;
+                restaurar.style.display = "inline-block";
+            } else if (num < numeroSecreto) {
+                mensaje.textContent = "Número muy bajo. ¡Prueba un número más alto!";
+            } else {
+                mensaje.textContent = "Número muy alto. ¡Prueba un número más bajo!";
+            }
+
+            numero.value = "";
+            numero.focus(); //para poner el cursor en el input
+        });
+
+        restaurar.addEventListener("click", function () {
+            numeroSecreto = Math.floor(Math.random() * 100) + 1;
+            intentosRestantes = 10;
+            intentos.textContent = "Intentos restantes: 10";
+            mensaje.textContent = "";
+            numero.value = "";
+            numero.focus(); //para poner el cursor en el input.
+            verificar.disabled = false; //habilito el boton probar.
+            restaurar.style.display = "none";  //oculto el boton probar otra vez. 
+        });
+
+    </script>
+</body>
+
+</html>
