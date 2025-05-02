@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alejandro Santos" />
+  <title>Ejercicios JavaScript</title>
+  <style>
+    :root {
+      --primary-color: blue;
+      --secondary-color: #3f37c9;
+      --border-color: #4895ef;
+      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      line-height: 1.5;
+      min-height: 991px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 900px;
+      height: 450px;
+      /* Aumentado desde 500px */
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: var(--box-shadow);
+      border-top: 5px solid var(--border-color);
+      text-align: center;
+    }
+
+    #mensaje {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+
+    #zona-unicornio {
+      margin-bottom: 20px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #unicornio {
+      width: 80px;
+      height: 80px;
+      cursor: grab;
+    }
+
+    #unicornio img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .brillo {
+      animation: brillar 1s ease;
+    }
+
+    @keyframes brillar {
+      0% {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+
+      50% {
+        transform: scale(1.3);
+        filter: brightness(2);
+      }
+
+      100% {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+    }
+
+    .destinos {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .destino {
+      width: 200px;
+      height: 200px;
+      border: 2px dashed var(--border-color);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .destino img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .destino #unicornio {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    footer a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .contenedor {
+        margin: 0 15px;
+      }
+
+      .destino {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>De vacaciones el unicornio</h1>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <p id="mensaje">¿A dónde me voy de vacaciones?</p>
+
+      <div id="zona-unicornio">
+        <div id="unicornio" draggable="true">
+          <img src="img/unicornio.jpg" alt="Unicornio" />
+        </div>
+      </div>
+
+      <div class="destinos">
+        <div class="destino" data-destino="la playa">
+          <img src="img/playa.jpg" alt="Playa" />
+        </div>
+        <div class="destino" data-destino="el lago">
+          <img src="img/lago.jpg" alt="Lago" />
+        </div>
+        <div class="destino" data-destino="el bosque">
+          <img src="img/arcoiris.jpg" alt="Bosque" />
+        </div>
+        <div class="destino" data-destino="la ciudad">
+          <img src="img/ciudad.jpg" alt="Ciudad" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Alejandro Santos
+    <a href="../../index.html">Ejercicios JavaScript</a>
+  </footer>
+
+  <script>
+    const unicornio = document.getElementById("unicornio");
+    const destinos = document.querySelectorAll(".destino");
+    const mensaje = document.getElementById("mensaje");
+
+    unicornio.addEventListener("dragstart", (e) => {
+      unicornio.classList.add("brillo");
+      e.dataTransfer.setData("text/plain", "unicornio");
+    });
+
+    unicornio.addEventListener("dragend", () => {
+      unicornio.classList.remove("brillo");
+    });
+
+    destinos.forEach(destino => {
+      destino.addEventListener("dragover", (e) => e.preventDefault());
+
+      destino.addEventListener("drop", (e) => {
+        e.preventDefault();
+
+        const id = e.dataTransfer.getData("text/plain");
+        const unicornioMovido = document.getElementById(id);
+
+        destino.appendChild(unicornioMovido);
+        unicornioMovido.style.position = "absolute";
+        unicornioMovido.style.top = "50%";
+        unicornioMovido.style.left = "50%";
+        unicornioMovido.style.transform = "translate(-50%, -50%)";
+
+        const lugar = destino.dataset.destino;
+        mensaje.textContent = "¡Me voy a " + lugar + "!";
+      });
+    });
+  </script>
+</body>
+
+</html>
