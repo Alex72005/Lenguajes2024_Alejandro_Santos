@@ -176,11 +176,11 @@
 
             if (num === numeroSecreto) {
                 mensaje.textContent = "¡Correcto! ¡Has adivinado el número!";
-                verificar.disabled = true;
+                verificar.disabled = true; //deshabilito el boton probar
                 restaurar.style.display = "inline-block";
             } else if (intentosRestantes === 0) {
                 mensaje.textContent = '¡Te has quedado sin intentos! El número era ' + numeroSecreto;
-                verificar.disabled = true;
+                verificar.disabled = true; //deshabilito el boton probar
                 restaurar.style.display = "inline-block";
             } else if (num < numeroSecreto) {
                 mensaje.textContent = "Número muy bajo. ¡Prueba un número más alto!";
