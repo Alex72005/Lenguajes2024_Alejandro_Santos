@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alejandro Santos" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="titulo">
+                <p id="mensajeTurno">Turno de: Jugador 1</p>
+            </div>
+
+            <div class="tablero">
+                <div id="modal" class="modal oculto">
+                    <div class="modal-contenido">
+                        <p id="mensajeVentana">Mensaje aquí</p>
+                        <button id="cerrarModal">Aceptar</button>
+                    </div>
+                </div>
+                <!-- 9 casillas -->
+                <div class="casilla" onclick="jugada(1)"></div>
+                <div class="casilla" onclick="jugada(2)"></div>
+                <div class="casilla" onclick="jugada(3)"></div>
+                <div class="casilla" onclick="jugada(4)"></div>
+                <div class="casilla" onclick="jugada(5)"></div>
+                <div class="casilla" onclick="jugada(6)"></div>
+                <div class="casilla" onclick="jugada(7)"></div>
+                <div class="casilla" onclick="jugada(8)"></div>
+                <div class="casilla" onclick="jugada(9)"></div>
+            </div>
+
+            <div class="botones-marcador">
+                <div class="grupo">
+                    <button id="btnReset">Reset</button>
+                    <span>J1: <span id="puntosJ1">0</span></span>
+                </div>
+                <div class="grupo">
+                    <button id="btnOtra">Otra</button>
+                    <span>J2: <span id="puntosJ2">0</span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
