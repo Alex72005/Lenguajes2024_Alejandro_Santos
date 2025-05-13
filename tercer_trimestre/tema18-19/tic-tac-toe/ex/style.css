@@ -40,11 +40,11 @@
 }
 
 .jugador1 {
-    background-image: url(img/jugador1.png);
+    background-image: url(../img/jugador1.png);
 }
 
 .jugador2 {
-    background-image: url(img/jugador2.png);
+    background-image: url(../img/jugador2.png);
 }
 
 .modal-contenido {
