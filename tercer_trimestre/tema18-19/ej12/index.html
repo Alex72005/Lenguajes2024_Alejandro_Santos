@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Santos">
+    <title>Modificar Clases del DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Modificar Clases del DOM</h1>
+    </header>
+
+    <main>
+        <div class="botonera">
+            <button onclick="card.classList.toggle('fondo')">Color Fondo</button>
+            <button onclick="card.classList.toggle('borde-punteado')">Bordes Punteados</button>
+            <button onclick="card.classList.toggle('borde-redondeado')">Bordes Redondeados</button>
+            <button onclick="card.classList.remove('oculto')">Aparecer</button>
+            <button onclick="card.classList.add('oculto')">Desaparecer</button>
+            <button onclick="cambiarTamanio('grande')">Tamaño Grande</button>
+            <button onclick="cambiarTamanio('chico')">Tamaño Chico</button>
+        </div>
+
+        <div class="contenedor">
+            <div class="card" id="card">Modifica la tarjeta</div>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

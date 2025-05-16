@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Santos">
+    <title>Funcionamiento de stopPropagation() y preventDefault()</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Funcionamiento de stopPropagation() y preventDefault()</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h3>Demostración de stopPropagation()</h3>
+            <div class="padre" id="padre">
+                <button id="hijo1">Hijo 1 (con stopPropagation)</button>
+                <button id="hijo2">Hijo 2 (sin stopPropagation)</button>
+            </div>
+
+            <h3>Demostración de preventDefault()</h3>
+            <button id="toggleEnlace">Desactivar Enlace</button>
+            <a href="https://www.w3schools.com" target="_blank" class="enlace" id="enlace">Ir a W3Schools</a>
+
+            <p id="resultado"></p>
+        </div>
+    </main>
+
+    <footer>
+        Alejandro Santos
+        <a href="../../index.html">Ejercicios JavaScript</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
